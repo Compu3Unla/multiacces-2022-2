@@ -91,6 +91,61 @@ nav a {
 	text-transform: uppercase;
 }
 
+/*-------------------------------FORM-------------------------------*/
+
+.form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	width: 500px;
+	padding: 100px;
+	margin: auto;
+	font-family: "Montserrat";
+	font-weight: 300;
+	color: white;
+}
+
+.form a {
+	color: #EAEAEA;
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.form p {
+	color: #EAEAEA;
+	font-weight: 500;
+	font-size: 21px;
+}
+
+.form .botones {
+	color: #EAEAEA;
+	width: 73%;
+	background: #F88312;
+	border: #FF6E00;
+	padding: 15px;
+	margin: 15px;
+	font-size: 18px;
+	font-family: "Montserrat";
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 30px;
+	/*falta agregarle un margin bottom al boton de ingresar*/
+
+}
+
+.controls {
+	width: 70%;
+	background: #eaeaea;
+	padding: 10px;
+	margin: 14px;
+	border-radius: 10px;
+	border: 0;
+	font-family: "Montserrat";
+	font-size: 18px;
+
+}
 /*-------------------------------FOOTER-------------------------------*/
 
 .footer {
