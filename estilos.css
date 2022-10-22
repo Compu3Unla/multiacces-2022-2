@@ -1,5 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
 
 html {
 	scroll-behavior: smooth;
@@ -9,7 +13,7 @@ html {
 h1 {
 	font-size: 36px;
 	font-weight: 700;
-	font-family: "Montserrat";
+	font-family: "Montserrat", "sans-serif";
 	color: #EAEAEA;
 	/*"Inicia sesion"*/
 }
@@ -87,6 +91,61 @@ nav a {
 	text-transform: uppercase;
 }
 
+/*-------------------------------FORM-------------------------------*/
+
+.form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	width: 500px;
+	padding: 100px;
+	margin: auto;
+	font-family: "Montserrat";
+	font-weight: 300;
+	color: white;
+}
+
+.form a {
+	color: #EAEAEA;
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.form p {
+	color: #EAEAEA;
+	font-weight: 500;
+	font-size: 21px;
+}
+
+.form .botones {
+	color: #EAEAEA;
+	width: 73%;
+	background: #F88312;
+	border: #FF6E00;
+	padding: 15px;
+	margin: 15px;
+	font-size: 18px;
+	font-family: "Montserrat";
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 30px;
+	/*falta agregarle un margin bottom al boton de ingresar*/
+
+}
+
+.controls {
+	width: 70%;
+	background: #eaeaea;
+	padding: 10px;
+	margin: 14px;
+	border-radius: 10px;
+	border: 0;
+	font-family: "Montserrat";
+	font-size: 18px;
+
+}
 /*-------------------------------FOOTER-------------------------------*/
 
 .footer {
@@ -97,8 +156,17 @@ nav a {
 	justify-content: space-evenly;
 }
 
+.footer p {
+	font-size: 13px;
+	line-height : 25px;
+}
+
 .logo_redes {
 	margin: 40px;
+}
+
+.logo_redes img {
+	margin: 6px 0;
 }
 
 .iconos-redes {
@@ -114,16 +182,27 @@ nav a {
 	margin: 40px;
 }
 
-.contactenos-footer h4 {
-	width: 240px;
+.contactenos-footer h3 {
+	margin-bottom: 6px;
 }
 
+.contactenos-footer h4 {
+	width: 240px;
+	margin-bottom: 6px;
+}
+.contactenos-footer img {
+	margin-top: 13px;
+}
 .datafiscal {
 	margin: 40px;
 }
 
+.datafiscal img {
+	margin-bottom: 6px;
+}
+
 .bot-foo img {
-	margin: 20px;
+	margin: 16px;
 }
 
 .bot-foo {
