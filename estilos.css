@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-* {
+*{
 	margin: 0;
 	padding: 0;
 }
@@ -14,7 +14,9 @@ html {
 	scroll-behavior: smooth;
 	background-image: url("img/background.jpg");
 }
-
+main {
+	margin: 0;
+}
 h1 {
 	font-size: 36px;
 	font-weight: 700;
@@ -22,16 +24,14 @@ h1 {
 	color: #EAEAEA;
 	/*"Inicia sesion"*/
 }
-
 h2 {
-	font-size: 28px;
+	font-size: 26px;
 	font-weight: 800;
 	font-family: "Montserrat";
 	color: #EAEAEA;
 	text-transform: uppercase;
 	/*titulos de fecha, formato, candy, etc*/
 }
-
 h3 {
 	font-size: 18px;
 	font-weight: 700;
@@ -40,7 +40,6 @@ h3 {
 	text-transform: uppercase;
 	/*botones*/
 }
-
 h4 {
 	font-size: 14px;
 	font-weight: 700;
@@ -48,14 +47,12 @@ h4 {
 	color: #EAEAEA;
 	/*footer*/
 }
-
 p {
 	font-size: 16px;
 	font-weight: 400;
 	font-family: "Montserrat";
 	color: #EAEAEA;
 }
-
 /*-------------------------------HEADER-------------------------------*/
 header {
 	display: flex;
@@ -66,25 +63,20 @@ header {
 	height: 60px;
 	background-color: #130D31;
 }
-
 header img {
 	margin-left: 84px;
 }
-
 .icono-usuario {
 	margin-right: 76px;
 }
-
 nav ul {
 	list-style: none;
 	text-align: center;
 	display: flex;
 }
-
 nav ul li {
 	display: inline;
 }
-
 nav a {
 	text-decoration: none;
 	color: #EAEAEA;
@@ -95,9 +87,12 @@ nav a {
 	font-size: 14px;
 	text-transform: uppercase;
 }
-
+.boton-splash {
+	background-image:url("img/splash-background.jpg");
+	background-attachment: fixed;
+	/*no entiendo por que no cubre todo el html ajajaj*/
+}
 /*-------------------------------FORM-------------------------------*/
-
 .form {
 	display: flex;
 	flex-direction: column;
@@ -115,20 +110,17 @@ nav a {
 	font-weight: 500;
 	text-decoration: none;
 }
-
 .form a:hover {
 	color: #F88312;
 	font-weight: 500;
 	font-size: 16px;
 	text-decoration: none;
 }
-
 .form p {
 	color: #EAEAEA;
 	font-weight: 500;
 	font-size: 16px;
 }
-
 .form .botones {
 	color: #EAEAEA;
 	width: 335px;
@@ -143,6 +135,11 @@ nav a {
 	/*falta agregarle un margin bottom al boton de ingresar*/
 }
 
+.form .botones:hover{
+	background: #EAEAEA;
+	color: #F88312;
+}
+
 .controls {
 	width: 70%;
 	background: #EAEAEA;
@@ -152,19 +149,37 @@ nav a {
 	border: 0;
 	font-family: "Montserrat";
 	font-size: 18px;
+	outline: none;
 }
 /*-------------------------------HOME-------------------------------*/
+.buscador-lupa {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 70px 0px 30px 96px;
+}
+.lupa {
+	background-color: rgba(255, 255, 255, 0.30);
+	width: 40px;
+	height:35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px 0px 0px 30px;
+}
 .buscador {
-	color: none;
 	width: 420px;
 	height: 35px;
-	border-radius: 30px;
+	outline: none;
+	border-radius: 0px 30px 30px 0px;
 	background-color: rgba(255, 255, 255, 0.30);
 	border: none;
-	margin: 70px 73px 30px;
+	font-family: "Montserrat";
+	color: #EAEAEA;
+	padding: 8px;
 }
-/*-------------------------------FOOTER-------------------------------*/
 
+/*-------------------------------FOOTER-------------------------------*/
 .footer {
 	display: flex;
 	flex-direction: row;
@@ -172,20 +187,16 @@ nav a {
 	background-color: #0E0926;
 	justify-content: space-evenly;
 }
-
 .footer p {
 	font-size: 13px;
 	line-height : 25px;
 }
-
 .logo_redes {
 	margin: 40px;
 }
-
 .logo_redes img {
 	margin: 6px 0;
 }
-
 .iconos-redes {
 	display: flex;
 	flex-direction: row;
@@ -194,15 +205,12 @@ nav a {
 	align-content: center;
 	flex-wrap: nowrap;
 }
-
 .contactenos-footer {
 	margin: 40px;
 }
-
 .contactenos-footer h3 {
 	margin-bottom: 6px;
 }
-
 .contactenos-footer h4 {
 	width: 240px;
 	margin-bottom: 6px;
@@ -213,21 +221,65 @@ nav a {
 .datafiscal {
 	margin: 40px;
 }
-
 .datafiscal img {
 	margin-bottom: 6px;
 }
-
 .bot-foo img {
 	margin: 16px;
 }
-
 .bot-foo {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	align-items: flex-start;
 	padding-top: 20px;
+}
+/*---------------------------PELICULAS-------------------------*/
+
+.publicidad img {
+	/*background-color: #EAEAEA;*/
+	margin: 10px 0px 30px 96px;
+	border-radius: 20px;
+	}
+
+.estrenos {
+	border: 1px solid white; /*Para identificar las dimensiones del contenedor luego se debe eliminar*/
+	height: 330px;
+	width: 1200px;
+	margin-left: 96px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin-bottom: 60px;
+}
+.estrenos img{
+	background-color: #EAEAEA;
+	height: 280px;
+	width: 180px;
+	border-radius: 20px;
+	margin: 10px 20px 10px 0px;
+}
+.catalogo {
+	border: 1px solid white;
+	height: 630px;
+	width: 1200px;
+	margin-left: 96px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: center;
+}
+.catalogo img {
+	background-color: #EAEAEA;
+	height: 280px;
+	width: 180px;
+	border-radius: 20px;
+	margin: 10px 20px 10px 0px;
+}
+
+.titular {
+	margin-left: 96px;
 }
 
 @font-face {
