@@ -19,7 +19,7 @@ h1 {
 	/*"Inicia sesion"*/
 }
 h2 {
-	font-size: 28px;
+	font-size: 26px;
 	font-weight: 800;
 	font-family: "Montserrat";
 	color: #EAEAEA;
@@ -128,6 +128,12 @@ nav a {
 	border-radius: 30px;
 	/*falta agregarle un margin bottom al boton de ingresar*/
 }
+
+.form .botones:hover{
+	background: #EAEAEA;
+	color: #F88312;
+}
+
 .controls {
 	width: 70%;
 	background: #EAEAEA;
@@ -137,17 +143,36 @@ nav a {
 	border: 0;
 	font-family: "Montserrat";
 	font-size: 18px;
+	outline: none;
 }
 /*-------------------------------HOME-------------------------------*/
+.buscador-lupa {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 70px 0px 30px 96px;
+}
+.lupa {
+	background-color: rgba(255, 255, 255, 0.30);
+	width: 40px;
+	height:35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px 0px 0px 30px;
+}
 .buscador {
-	color: none;
 	width: 420px;
 	height: 35px;
-	border-radius: 30px;
+	outline: none;
+	border-radius: 0px 30px 30px 0px;
 	background-color: rgba(255, 255, 255, 0.30);
 	border: none;
-	margin: 70px 73px 30px;
+	font-family: "Montserrat";
+	color: #EAEAEA;
+	padding: 8px;
 }
+
 /*-------------------------------FOOTER-------------------------------*/
 .footer {
 	display: flex;
@@ -205,16 +230,14 @@ nav a {
 }
 /*---------------------------PELICULAS-------------------------*/
 
-.publicidad {
-	background-color: #EAEAEA;
-	height: 30vh;
-	margin-left: 96px;
-	width:  1200px;
+.publicidad img {
+	/*background-color: #EAEAEA;*/
+	margin: 10px 0px 30px 96px;
 	border-radius: 20px;
-	margin-bottom: 20px;
 	}
+
 .estrenos {
-	border: 2px solid white; /*Para identificar las dimensiones del contenedor luego se debe eliminar*/
+	border: 1px solid white; /*Para identificar las dimensiones del contenedor luego se debe eliminar*/
 	height: 330px;
 	width: 1200px;
 	margin-left: 96px;
@@ -228,10 +251,10 @@ nav a {
 	height: 280px;
 	width: 180px;
 	border-radius: 20px;
-	margin: 10px;
+	margin: 10px 20px 10px 0px;
 }
 .catalogo {
-	border: 2px solid white;
+	border: 1px solid white;
 	height: 630px;
 	width: 1200px;
 	margin-left: 96px;
@@ -246,7 +269,11 @@ nav a {
 	height: 280px;
 	width: 180px;
 	border-radius: 20px;
-	margin: 10px;
+	margin: 10px 20px 10px 0px;
+}
+
+.titular {
+	margin-left: 96px;
 }
 
 @font-face {
