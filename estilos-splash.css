@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url("img/splash-background.jpg")
+}
+
+.boton-splash {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	padding: 7%;
+	margin-top:20px;
+}
