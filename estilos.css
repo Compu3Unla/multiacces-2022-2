@@ -98,16 +98,21 @@ nav a {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	align-items: center;
-	width: 500px;
+	width: 450px;
 	padding: 100px;
 	margin: auto;
 	font-family: "Montserrat";
 	font-weight: 300;
 	color: white;
 }
-
 .form a {
 	color: #EAEAEA;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.form a:hover {
+	color: #F88312;
 	font-weight: 500;
 	font-size: 16px;
 	text-decoration: none;
@@ -116,35 +121,42 @@ nav a {
 .form p {
 	color: #EAEAEA;
 	font-weight: 500;
-	font-size: 21px;
+	font-size: 16px;
 }
 
 .form .botones {
 	color: #EAEAEA;
-	width: 73%;
+	width: 335px;
 	background: #F88312;
-	border: #FF6E00;
-	padding: 15px;
+	border: none;
+	padding: 12px;
 	margin: 15px;
 	font-size: 18px;
 	font-family: "Montserrat";
 	font-weight: 700;
-	text-transform: uppercase;
 	border-radius: 30px;
 	/*falta agregarle un margin bottom al boton de ingresar*/
-
 }
 
 .controls {
 	width: 70%;
-	background: #eaeaea;
+	background: #EAEAEA;
 	padding: 10px;
 	margin: 14px;
 	border-radius: 10px;
 	border: 0;
 	font-family: "Montserrat";
 	font-size: 18px;
-
+}
+/*-------------------------------HOME-------------------------------*/
+.buscador {
+	color: none;
+	width: 420px;
+	height: 35px;
+	border-radius: 30px;
+	background-color: rgba(255, 255, 255, 0.30);
+	border: none;
+	margin: 70px 73px 30px;
 }
 /*-------------------------------FOOTER-------------------------------*/
 
