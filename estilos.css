@@ -3,6 +3,8 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'Montserrat', "sans-serif";
+	color: #EAEAEA;
 }
 
 *{
@@ -20,38 +22,28 @@ main {
 h1 {
 	font-size: 36px;
 	font-weight: 700;
-	font-family: "Montserrat", "sans-serif";
-	color: #EAEAEA;
 	/*"Inicia sesion"*/
 }
 h2 {
 	font-size: 26px;
 	font-weight: 800;
-	font-family: "Montserrat";
-	color: #EAEAEA;
 	text-transform: uppercase;
 	/*titulos de fecha, formato, candy, etc*/
 }
 h3 {
 	font-size: 18px;
 	font-weight: 700;
-	font-family: "Montserrat";
-	color: #EAEAEA;
 	text-transform: uppercase;
 	/*botones*/
 }
 h4 {
 	font-size: 14px;
 	font-weight: 700;
-	font-family: "Montserrat";
-	color: #EAEAEA;
 	/*footer*/
 }
 p {
 	font-size: 16px;
 	font-weight: 400;
-	font-family: "Montserrat";
-	color: #EAEAEA;
 }
 /*-------------------------------HEADER-------------------------------*/
 header {
@@ -282,7 +274,7 @@ nav a {
 	margin-left: 96px;
 }
 
-@font-face {
+/*@font-face {
 	font-family:"Montserrat";
 	src: url("fuentes/Montserrat-Regular.ttf") format "truetype";
 	font-weight: normal;
@@ -315,4 +307,4 @@ nav a {
 	src: url("fuentes/Montserrat-SemiBold.ttf")"truetype";
 	font-weight: normal;
 	font-style: normal;
-}
+}*/
