@@ -103,7 +103,7 @@ body {
 	animation-delay: 1.8s
 }
 /*------------------------media-----------------------*/
-@media screen and (max-width:600px) {
+@media screen and (max-width:360px) {
 	
 body {
 	background-color: darkmagenta;

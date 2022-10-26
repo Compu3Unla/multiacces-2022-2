@@ -281,7 +281,7 @@ nav a {
 .titular {
 	margin-left: 96px;
 }
-@media screen and (max-width:640px){
+@media screen and (max-width:360px){
 	/*falta agregar el background*/
 
 h1 {
