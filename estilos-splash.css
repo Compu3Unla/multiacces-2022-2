@@ -4,6 +4,23 @@
 body {
 	background-image: url("img/splash-background.jpg")
 }
+/*.boton-splash p {
+	font-family: "poppins";
+	font-weight: 700;
+	color: #EAEAEA;
+	font-size: 100px;
+	font-kerning: auto;
+}*/
+.boton {
+	padding: 0;
+	color: none;
+	border: none;
+	font-size: 0px;
+	width: 100%;
+	height: 200px;
+	background: none;
+	position: absolute;
+}
 
 .boton {
 	padding: 0;
@@ -29,8 +46,11 @@ body {
 	display:flex;
 }
 
-.boton-splash ul li {
+
+	font-family: "poppins";
+
 	font-family: "Poppins", "sans-serif";
+
 	list-style:none;
 	font-weight:bold;
 	letter-spacing:-1px;
@@ -96,3 +116,24 @@ body {
 .boton-splash ul li:nth-child(11){
 	animation-delay: 1.8s
 }
+
+/*------------------------media-----------------------*/
+@media screen and (max-width:360px) {
+	
+body {
+	background-color: darkmagenta;
+}
+.boton-splash {
+	top: 48%;
+}
+.boton-splash ul li {
+	font-size:3em;
+}
+.boton {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top:0%;
+}
+}
+

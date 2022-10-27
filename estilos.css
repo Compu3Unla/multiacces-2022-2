@@ -312,6 +312,25 @@ nav a {
 .titular {
 	margin-left: 96px;
 }
+@media screen and (max-width:360px){
+	/*falta agregar el background*/
+
+
+h1 {
+	font-size: 25px;
+	margin-bottom: 10px;
+	/*"Inicia sesion"*/
+}
+h2 {
+	font-size: 16px;
+	/*titulos de fecha, formato, candy, etc*/
+}
+h3 {
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	/*botones*/
+}
 
 /*@font-face {
 	font-family:"Montserrat";
@@ -320,25 +339,40 @@ nav a {
 	font-style: normal;
 } 
 
-@font-face {
-	font-family: "Montserrat";
-	src: url("fuentes/Montserrat-Medium.ttf") format "truetype";
-	font-weight: normal;
-	font-style: normal;
+
+p {
+	font-size: 13px;
+	font-weight: 400;
+}
+/*----------------inicio de sesión----------------*/
+.form {
+	width: 100%;
+	padding: 0;
+	margin-top: 100px;
 }
 
-@font-face {
-	font-family: "Montserrat";
-	src:url("fuentes/Montserrat-Bold.ttf")format "truetype";
-	font-weight: normal;
-	font-style: normal;
+.form a:hover {
+	color: #F88312;
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
+}
+.form p {
+	color: #EAEAEA;
+	font-weight: 500;
+	font-size: 16px;
+		margin-top: 100px;
+
+}
+.form .botones {
+	width: 240px;
+	font-size: 15px;
 }
 
-@font-face {
-	font-family: "Montserrat";
-	src: url("fuentes/Montserrat-ExtraBold.ttf")format "truetype";
-	font-weight: normal;
-	font-style: normal;
+
+.form .botones:hover{
+	background: #EAEAEA;
+	color: #F88312;
 }
 
 @font-face {
