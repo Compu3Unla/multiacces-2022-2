@@ -306,9 +306,8 @@ nav a {
 
 /*-----------------------------COMPRA-----------------------------*/
 
-.compra {
-	overflow-x: scroll;
-}
+/*.compra {
+	overflow-x: scroll;}*/
 .procesocompra {
 	background-color: rgba(234,234,234,0.00);
 	width: 750px;
@@ -807,5 +806,4 @@ h5 {
 }
 .logo_redes img {
 	margin: 6px 5px 6px 0px;
-}
 }
