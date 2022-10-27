@@ -46,9 +46,7 @@ body {
 	display:flex;
 }
 
-
-	font-family: "poppins";
-
+.boton-splash ul li {
 	font-family: "Poppins", "sans-serif";
 
 	list-style:none;
