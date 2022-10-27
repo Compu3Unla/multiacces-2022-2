@@ -310,7 +310,6 @@ nav a {
 input, select {
 	color:#000000;
 }
-
 .compra {
 	overflow-x: scroll;
 }
@@ -632,7 +631,7 @@ h5 {
 	top: 60px;
 }
 .ticket {
-	background-image: url("img/tick_moovie.png");
+	background-image: url("img/tick_moovie2.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	nackground-color: #0E0926;
@@ -641,7 +640,9 @@ h5 {
 	height: 450px;
 	border-radius: 20px;
 	padding: 10px 50px 10px 24px;
+	background-color: linear-gradient( rgba (255,255,255,0)rgba (0,0,0,1) )
 }
+
 .ticket h3 {
 	margin-top: 220px;
 }
