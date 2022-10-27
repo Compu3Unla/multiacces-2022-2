@@ -225,12 +225,13 @@ nav a {
 /*--------------------CARRUSEL INICIO------------------*/
 
 .slide {
-	width: 97%;
+	width: 100%;
 	margin: 0;
 	overflow: hidden;
 }
 .slide ul {
 	display: flex;
+	align-content: center;
 	padding: 0;
 	
 	animation: carrusel 20s infinite alternate;
