@@ -668,125 +668,143 @@ h5 {
 @media screen and (max-width:360px){
 	/*falta agregar el background*/
 
-
-h1 {
-	font-size: 25px;
-	margin-bottom: 10px;
-	/*"Inicia sesion"*/
-}
-
-h2 {
-	font-size: 16px;
-	/*titulos de fecha, formato, candy, etc*/
-}
-
-h3 {
-	font-size: 13px;
-	font-weight: 700;
-	text-transform: uppercase;
-	/*botones*/
-}
-
-
-/*----------------inicio de sesión----------------*/
-.form {
-	width: 100%;
-	padding: 0;
-	margin-top: 100px;
-}
-
-.form a:hover {
-	color: #F88312;
-	font-weight: 500;
-	font-size: 16px;
-	text-decoration: none;
-}
-.form p {
-	color: #EAEAEA;
-	font-weight: 500;
-	font-size: 16px;
-	margin-top: 100px;
-}
+	main {
+		margin: 0;
+		padding: 0;
+	}
 	
-.form .botones {
-	width: 240px;
-	font-size: 15px;
-}
+	h1 {
+		font-size: 25px;
+		margin-bottom: 10px;
+		/*"Inicia sesion"*/
+	}
+
+	h2 {
+		font-size: 16px;
+		/*titulos de fecha, formato, candy, etc*/
+	}
+
+	h3 {
+		font-size: 13px;
+		font-weight: 700;
+		text-transform: uppercase;
+		/*botones*/
+	}
 
 
-.form .botones:hover{
-	background: #EAEAEA;
-	color: #F88312;
-}
+	/*----------------inicio de sesión----------------*/
+	.form {
+		width: 100%;
+		padding: 0;
+		margin-top: 100px;
+	}
+
+	.form a:hover {
+		color: #F88312;
+		font-weight: 500;
+		font-size: 16px;
+		text-decoration: none;
+	}
+	.form p {
+		color: #EAEAEA;
+		font-weight: 500;
+		font-size: 16px;
+		margin-top: 100px;
+	}
+
+	.form .botones {
+		width: 240px;
+		font-size: 15px;
+	}
 
 
-/*--------------------CARRUSEL INICIO------------------*/
+	.form .botones:hover{
+		background: #EAEAEA;
+		color: #F88312;
+	}
 
-.slide {
-	width: 97%;
-	margin: 0;
-	overflow: hidden;
-}
 
-.slide ul {
+	/*--------------------CARRUSEL INICIO------------------*/
+
+	.slide {
+		width: 100%;
+	}
+
+	.slide img {
+		margin: 0px 5px 30px 5px;
+		width: 348px;
+		height: 150px;
+		}
+/*--------------------CARRUSEL FIN------------------*/
+
+	
+/*---------------------------PELICULAS-------------------------*/
+
+.buscador-lupa {
 	display: flex;
-	padding: 0;
-	
-	animation: carrusel 20s infinite alternate;
-	animation-timing-function: ease;
-}
-
-.slide li {
-	width: 100%;
-	list-style: none;
-}
-
-.slide img {
-	/*background-color: #EAEAEA;*/
-	margin: 10px 0px 30px 94px;
-	border-radius: 20px;
-	}
-
-@keyframes carrusel {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
-}
-/*--------------------FOOTER------------------------*/
-.footer {
-    flex-direction: row;
-    flex-wrap: wrap;
 	justify-content: flex-start;
-	}
-
-.contactenos-footer h4 {
-	display:none;
-}
-.contactenos-footer h3 {
-		display: none;
-	}
-.contacto {
-		display:none;
-	}
-	
-.bot-foo {
-    padding-top: 0px;
-	}
-
-.logo_redes {
-    margin: 40px 40px 0px 40px;
+	align-items: center;
+	margin: 70px 10px 30px 10px;
 }
 
-.contactenos-footer {
-    margin: 0px 40px;
+/*.lupa {
+	background-color: rgba(255, 255, 255, 0.30);
+	width: 40px;
+	height:35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px 0px 0px 30px;
+}
+.buscador {
+	width: 420px;
+	height: 35px;
+	outline: none;
+	border-radius: 0px 30px 30px 0px;
+	background-color: rgba(255, 255, 255, 0.30);
+	border: none;
+	font-family: "Montserrat";
+	color: #EAEAEA;
+	padding: 8px;
+}*/
+
+.titular {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.estrenos {
+	border: 1px solid white; /*Para identificar las dimensiones del contenedor luego se debe eliminar*/
+	height: 820px;
+	width: 345px;
+	margin-left: 5px;
+	justify-content:space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.estrenos img{
+	height: 260px;
+	width: 166px;
+	margin: 0px;
+}
+.catalogo {
+	border: 1px solid white;
+	height: 1610px;
+	width: 345px;
+	margin-left: 5px;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: space-around;
+	margin-bottom: 10px;
+}
+
+.catalogo img {
+	height: 260px;
+	width: 166px;
+	margin: 0px;
 }
 
 .bot-foo img {
