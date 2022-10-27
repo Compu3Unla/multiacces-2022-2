@@ -242,7 +242,7 @@ nav a {
 }
 .slide img {
 	/*background-color: #EAEAEA;*/
-	margin: 10px 0px 30px 94px;
+	margin: 10px 22px 30px 94px;
 	border-radius: 20px;
 	}
 
@@ -264,7 +264,7 @@ nav a {
 
 
 .estrenos {
-	border: 1px solid white; /*Para identificar las dimensiones del contenedor luego se debe eliminar*/
+	/*border: 1px solid white; /*Para identificar las dimensiones del contenedor luego se debe eliminar*/
 	height: 330px;
 	width: 1200px;
 	margin-left: 96px;
@@ -281,7 +281,7 @@ nav a {
 	margin: 10px 20px 10px 0px;
 }
 .catalogo {
-	border: 1px solid white;
+	/*border: 1px solid white;*/
 	height: 630px;
 	width: 1200px;
 	margin-left: 96px;
@@ -306,8 +306,9 @@ nav a {
 
 /*-----------------------------COMPRA-----------------------------*/
 
-/*.compra {
-	overflow-x: scroll;}*/
+.compra {
+	overflow-x: scroll;
+}
 .procesocompra {
 	background-color: rgba(234,234,234,0.00);
 	width: 750px;
@@ -721,9 +722,9 @@ h5 {
 		width: 100%;
 	}
 	.slide img {
-		margin: 0px 5px 30px 5px;
+		margin: 30px 7px 30px 5px;
 		width: 348px;
-		height: 150px;
+		height: auto;
 		}
 /*--------------------CARRUSEL FIN------------------*/
 
@@ -731,7 +732,7 @@ h5 {
 /*---------------------------PELICULAS-------------------------*/
 
 .buscador-lupa {
-	display: flex;
+	display: none; /*lo cambíe para que no aparezca-yami*/
 	justify-content: flex-start;
 	align-items: center;
 	margin: 70px 10px 30px 10px;
@@ -759,13 +760,13 @@ h5 {
 }*/
 
 .titular {
-	margin-left: 10px;
+	margin-left: 24px;
 	margin-bottom: 10px;
 }
 .estrenos {
-	border: 1px solid white; /*Para identificar las dimensiones del contenedor luego se debe eliminar*/
+	/*border: 1px solid white; /*Para identificar las dimensiones del contenedor luego se debe eliminar*/
 	height: 820px;
-	width: 345px;
+	width: 97%;
 	margin-left: 5px;
 	justify-content:space-evenly;
 	flex-wrap: wrap;
@@ -773,13 +774,13 @@ h5 {
 	margin-bottom: 10px;
 }
 .estrenos img{
-	height: 230px;
-	width: 146px;
+	height: 235px;
+	width: auto;
 	margin: 0px;
 	border-radius: 5px;
 }
 .catalogo {
-	border: 1px solid white;
+	/*border: 1px solid white;*/
 	height: 1610px;
 	width: 345px;
 	margin-left: 5px;
@@ -791,8 +792,8 @@ h5 {
 	margin-bottom: 10px;
 }
 .catalogo img {
-	height: 230px;
-	width: 146px;
+	height: 235px;
+	width: auto;
 	margin: 0px;
 	border-radius: 5px;
 }
@@ -806,4 +807,47 @@ h5 {
 }
 .logo_redes img {
 	margin: 6px 5px 6px 0px;
+}
+/*--------------------FOOTER------------------------*/
+.footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: flex-start;
+	}
+
+.contactenos-footer h4 {
+	display:none;
+}
+.contactenos-footer h3 {
+		display: none;
+	}
+.contacto {
+		display:none;
+	}
+	
+.bot-foo {
+    padding-top: 0px;
+	}
+
+.logo_redes {
+    margin: 40px 40px 0px 40px;
+}
+
+.contactenos-footer {
+    margin: 0px 40px;
+}
+
+.bot-foo img {
+    margin: 0px 40px;
+    padding: 10px 0px;
+}
+
+.iconos-redes img {
+	width: 55px;
+	height: 55px;
+	}
+	
+.logo_redes img {
+    margin: 6px 5px 6px 0px;
+}
 }
