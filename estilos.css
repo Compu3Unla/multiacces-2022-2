@@ -564,6 +564,8 @@ h5 {
 	padding: 2px 0 0 12px;
 	font-size: 18px;
 	box-sizing: border-box;
+	outline: none;
+	border: none;
 }
 .dobledata {
 	display: flex;
@@ -758,7 +760,47 @@ h3 {
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
 }
-/*--------------------CARRUSEL FIN------------------*/
+/*--------------------FOOTER------------------------*/
+.footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: flex-start;
+	}
 
+.contactenos-footer h4 {
+	display:none;
+}
+.contactenos-footer h3 {
+		display: none;
+	}
+.contacto {
+		display:none;
+	}
+	
+.bot-foo {
+    padding-top: 0px;
+	}
+
+.logo_redes {
+    margin: 40px 40px 0px 40px;
+}
+
+.contactenos-footer {
+    margin: 0px 40px;
+}
+
+.bot-foo img {
+    margin: 0px 40px;
+    padding: 10px 0px;
+}
+
+.iconos-redes img {
+	width: 55px;
+	height: 55px;
+	}
+	
+.logo_redes img {
+    margin: 6px 5px 6px 0px;
+}
 
 }
