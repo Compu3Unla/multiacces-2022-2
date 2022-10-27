@@ -108,6 +108,7 @@ nav a {
 	color: #EAEAEA;
 	font-weight: 500;
 	font-size: 16px;
+	margin-top: 80px;
 }
 .form .botones {
 	color: #EAEAEA;
@@ -120,14 +121,11 @@ nav a {
 	font-family: "Montserrat";
 	font-weight: 700;
 	border-radius: 30px;
-	/*falta agregarle un margin bottom al boton de ingresar*/
 }
-
 .form .botones:hover{
 	background: #EAEAEA;
 	color: #F88312;
 }
-
 .controls {
 	width: 70%;
 	background: #EAEAEA;
@@ -166,7 +164,6 @@ nav a {
 	color: #EAEAEA;
 	padding: 8px;
 }
-
 /*-------------------------------FOOTER-------------------------------*/
 .footer {
 	display: flex;
@@ -232,7 +229,6 @@ nav a {
 	margin: 0;
 	overflow: hidden;
 }
-
 .slide ul {
 	display: flex;
 	padding: 0;
@@ -240,12 +236,10 @@ nav a {
 	animation: carrusel 20s infinite alternate;
 	animation-timing-function: ease;
 }
-
 .slide li {
 	width: 100%;
 	list-style: none;
 }
-
 .slide img {
 	/*background-color: #EAEAEA;*/
 	margin: 10px 0px 30px 94px;
@@ -662,7 +656,7 @@ h5 {
 }
 
 
-/*---------------------------RESPONSIVE-------------------------*/
+/*-------------------------------------------RESPONSIVE----------------------------------*/
 
 @media screen and (max-width:360px){
 	/*falta agregar el background*/
@@ -671,7 +665,12 @@ h5 {
 		margin: 0;
 		padding: 0;
 	}
-	
+	html {
+		background-image: url("img/background-celu.jpg");
+		width: 100%;
+		height: 100%;
+	}
+
 	h1 {
 		font-size: 25px;
 		margin-bottom: 10px;
@@ -689,8 +688,6 @@ h5 {
 		text-transform: uppercase;
 		/*botones*/
 	}
-
-
 	/*----------------inicio de sesión----------------*/
 	.form {
 		width: 100%;
@@ -715,20 +712,14 @@ h5 {
 		width: 240px;
 		font-size: 15px;
 	}
-
-
 	.form .botones:hover{
 		background: #EAEAEA;
 		color: #F88312;
 	}
-
-
 	/*--------------------CARRUSEL INICIO------------------*/
-
 	.slide {
 		width: 100%;
 	}
-
 	.slide img {
 		margin: 0px 5px 30px 5px;
 		width: 348px;
@@ -771,7 +762,6 @@ h5 {
 	margin-left: 10px;
 	margin-bottom: 10px;
 }
-
 .estrenos {
 	border: 1px solid white; /*Para identificar las dimensiones del contenedor luego se debe eliminar*/
 	height: 820px;
@@ -783,9 +773,10 @@ h5 {
 	margin-bottom: 10px;
 }
 .estrenos img{
-	height: 260px;
-	width: 166px;
+	height: 230px;
+	width: 146px;
 	margin: 0px;
+	border-radius: 5px;
 }
 .catalogo {
 	border: 1px solid white;
@@ -799,25 +790,20 @@ h5 {
 	align-content: space-around;
 	margin-bottom: 10px;
 }
-
 .catalogo img {
-	height: 260px;
-	width: 166px;
+	height: 230px;
+	width: 146px;
 	margin: 0px;
+	border-radius: 5px;
 }
-
 .bot-foo img {
-    margin: 0px 40px;
-    padding: 10px 0px;
+	margin: 0px 40px;
+	padding: 10px 0px;
 }
-
 .iconos-redes img {
 	width: 55px;
 	height: 55px;
-	}
-	
-.logo_redes img {
-    margin: 6px 5px 6px 0px;
 }
-
+.logo_redes img {
+	margin: 6px 5px 6px 0px;
 }
