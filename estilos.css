@@ -225,25 +225,24 @@ nav a {
 /*--------------------CARRUSEL INICIO------------------*/
 
 .slide {
-	width: 100%;
-	margin: 0;
+	width: 1200px;
+	margin: 10px 0 30px 96px;
 	overflow: hidden;
 }
 .slide ul {
 	display: flex;
 	align-content: center;
 	padding: 0;
-	
 	animation: carrusel 20s infinite alternate;
 	animation-timing-function: ease;
 }
 .slide li {
 	width: 100%;
 	list-style: none;
+	padding: 4px
 }
 .slide img {
 	/*background-color: #EAEAEA;*/
-	margin: 10px 22px 30px 94px;
 	border-radius: 20px;
 	}
 
