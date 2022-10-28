@@ -43,38 +43,54 @@ p {
 }
 /*-------------------------------HEADER-------------------------------*/
 header {
+	width: 100%;
+	background-color: #130D31;
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: space-between;
-	width: 100%;
-	height: 60px;
-	background-color: #130D31;
 }
-header img {
+
+#menu-hamburguesa {
+	display: none;
+}
+
+header label {
+	display: none;
+	padding: 10px;
+}
+
+header div img {
 	margin-left: 84px;
 }
-.icono-usuario {
-	margin-right: 76px;
-}
-nav ul {
+
+.menu ul {
 	list-style: none;
 	text-align: center;
 	display: flex;
+	margin: 0;
+	padding: 0;
 }
-nav ul li {
+.menu ul li {
 	display: inline;
 }
-nav a {
+.menu a {
+	display: block;
 	text-decoration: none;
 	color: #EAEAEA;
 	font-weight: 700;
 	padding: 10px 50px;
 	border: 1px transparent;
-	font-family: "Montserrat";
 	font-size: 14px;
 	text-transform: uppercase;
 }
+
+.icono-usuario {
+	margin-right: 76px;
+}
+/*------------------------------*/
+
+
 .boton-splash {
 	background-image:url("img/splash-background.jpg");
 	background-attachment: fixed;
@@ -728,6 +744,52 @@ h5 {
 		background: #EAEAEA;
 		color: #F88312;
 	}
+	
+/*-------------------------------HEADER-------------------------------*/
+	header {
+	width: 100%;
+	background-color: #130D31;
+	display: block;
+}
+
+	header label {
+		display: block;
+	}
+
+	header div img {
+		display: none;
+	}
+	
+	.menu {
+		position: absolute;
+		background-color: #130D31;
+		width: 50%;
+		margin-left: -50%;
+		transition: all 0.5s;
+	}
+	
+	.menu ul {
+		flex-direction: column;
+	}
+	
+	.menu li {
+		border-top: 1px solid #EAEAEA;
+	}
+	
+	#menu-hamburguesa:checked ~ .menu {
+		margin: 0;
+	}
+	
+	.menu a {
+		padding: 10px 15px;
+		text-align: start;
+	}
+
+	.icono-usuario {
+		display: none;
+	}
+/*------------------------------*/
+
 	/*--------------------CARRUSEL INICIO------------------*/
 	.slide {
 		width: 100%;
@@ -743,32 +805,11 @@ h5 {
 /*---------------------------PELICULAS-------------------------*/
 
 .buscador-lupa {
-	display: none; /*lo cambíe para que no aparezca-yami*/
+	display: none;
 	justify-content: flex-start;
 	align-items: center;
 	margin: 70px 10px 30px 10px;
 }
-
-/*.lupa {
-	background-color: rgba(255, 255, 255, 0.30);
-	width: 40px;
-	height:35px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 30px 0px 0px 30px;
-}
-.buscador {
-	width: 420px;
-	height: 35px;
-	outline: none;
-	border-radius: 0px 30px 30px 0px;
-	background-color: rgba(255, 255, 255, 0.30);
-	border: none;
-	font-family: "Montserrat";
-	color: #EAEAEA;
-	padding: 8px;
-}*/
 
 .titular {
 	margin-left: 24px;
