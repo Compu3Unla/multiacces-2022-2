@@ -309,9 +309,6 @@ nav a {
 input, select {
 	color:#000000;
 }
-.compra {
-	overflow-x: scroll;
-}
 .procesocompra {
 	background-color: rgba(234,234,234,0.00);
 	width: 750px;
@@ -419,6 +416,18 @@ input, select {
 .carrecard {
 	display: flex;
 	overflow-y: auto;	/*le agrega la función de scroll horizontal*/
+	padding-bottom: 10px;
+}
+.carrecard::-webkit-scrollbar {
+	/*Permite ajustar la barra de scroll general*/
+	height: 12px;
+	border-radius: 15px;
+	background: rgba(234,234,234,0.40)
+}
+.carrecard::-webkit-scrollbar-thumb {
+	/*Permite ajustar el elemento movil de scroll*/
+	background: #7300BD;
+	border-radius: 15px;
 }
 .entrada {
 	height: 350px;
