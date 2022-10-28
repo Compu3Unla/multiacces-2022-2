@@ -231,25 +231,24 @@ nav a {
 /*--------------------CARRUSEL INICIO------------------*/
 
 .slide {
-	width: 100%;
-	margin: 0;
+	width: 1200px;
+	margin: 10px 0 30px 96px;
 	overflow: hidden;
 }
 .slide ul {
 	display: flex;
 	align-content: center;
 	padding: 0;
-	
 	animation: carrusel 20s infinite alternate;
 	animation-timing-function: ease;
 }
 .slide li {
 	width: 100%;
 	list-style: none;
+	padding: 4px
 }
 .slide img {
 	/*background-color: #EAEAEA;*/
-	margin: 10px 22px 30px 94px;
 	border-radius: 20px;
 	}
 
@@ -315,9 +314,6 @@ nav a {
 
 input, select {
 	color:#000000;
-}
-.compra {
-	overflow-x: scroll;
 }
 .procesocompra {
 	background-color: rgba(234,234,234,0.00);
@@ -426,6 +422,18 @@ input, select {
 .carrecard {
 	display: flex;
 	overflow-y: auto;	/*le agrega la función de scroll horizontal*/
+	padding-bottom: 10px;
+}
+.carrecard::-webkit-scrollbar {
+	/*Permite ajustar la barra de scroll general*/
+	height: 12px;
+	border-radius: 15px;
+	background: rgba(234,234,234,0.40)
+}
+.carrecard::-webkit-scrollbar-thumb {
+	/*Permite ajustar el elemento movil de scroll*/
+	background: #7300BD;
+	border-radius: 15px;
 }
 .entrada {
 	height: 350px;
