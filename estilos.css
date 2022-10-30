@@ -126,7 +126,7 @@ header div img {
 	font-size: 16px;
 	margin-top: 80px;
 }
-.form .botones {
+/*.form*/ .botones {
 	color: #EAEAEA;
 	width: 335px;
 	background: #F88312;
@@ -242,6 +242,79 @@ header div img {
 	padding-top: 20px;
 }
 /*---------------------------PELICULAS-------------------------*/
+
+.pelicula {
+	display: flex;
+	margin: 80px 0 56px 94px;
+}
+.pelicula img {
+	border-radius: 20px;
+}
+.datatecnica {
+	margin: 20px 87px 0 108px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.peli {
+	display: flex;
+	align-items: center;
+
+}
+.peli img {
+	margin-left: 18px;
+	padding-bottom: 2px;
+}
+.infopeli{
+	display: flex;
+	width: 60%;
+	max-width:800px;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 25px;
+}
+.infopeli h3 {
+	font-weight: 400;
+	text-transform: capitalize;
+}
+.datatecnica p {
+	width: 670px;
+	margin: 25px 0 36px;
+}
+.opciones {
+	width: 90%;
+	max-width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.opciones .botones {
+	width: 280px;
+	margin: 0px;
+	
+}
+.secundario {
+	background-color: #7300BD;
+	width: 125px;
+	margin-left: 10px;
+	padding: 12px 6px;
+	border-radius: 30px;
+	border: none;
+	color: #EAEAEA;
+	font-size: 18px;
+	font-family: "Montserrat";
+	font-weight: 700;
+	transition: 5s all ease;
+	overflow: hidden;
+}
+.secundario { /*ALTERNATIVA, poner la animación tanto en botones y secundario, pasar el box shadow a #EAEAEA con una transparencia del 30% para que funcione en todos los botones independientemente de su color*/
+	webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+	transition: box-shadow 300ms ease-in-out, color 500ms ease-in-out;
+}
+.secundario:hover {
+	box-shadow: 0 0 40px 10px rgba(234,234,234,0.30) inset;
+	  z-index: -1;
+}
 
 
 /*--------------------CARRUSEL INICIO------------------*/
@@ -507,7 +580,14 @@ h5 {
 	background-color: #EAEAEA;
 	border-radius: 30px;
 	margin: 3px;
+	display: flex;
+	font-size: 18px;
+	align-items: center;
+	justify-content: center;
+	color: #000000;
 }
+.col-nar {background-color: #f88312;}
+.col-vio {background-color: #7300bd;}
 .intocine img {
 	padding-left: 20px;
 }
@@ -637,8 +717,9 @@ h5 {
 	height: 18px;
 }
 
-.botones { 	/*Hace falta unificar la clase de botones para que sea uno solo*/
-	color: #EAEAEA;
+/*.botones { 	
+/*Hace falta unificar la clase de botones para que sea uno solo*/
+	/*color: #EAEAEA;
 	width: 335px;
 	background: #F88312;
 	border: none;
@@ -648,7 +729,7 @@ h5 {
 	font-family: "Montserrat";
 	font-weight: 700;
 	border-radius: 30px;
-}
+}*/
 .scroll {
 	position: absolute;
 	width: 480px;

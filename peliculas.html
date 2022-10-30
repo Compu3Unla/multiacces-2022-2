@@ -8,11 +8,13 @@
 </head>
 
 <body>
-		<header>
+	<header>
+		<input type="checkbox" id="menu-hamburguesa">
+		<label for="menu-hamburguesa"><img src="img/icono-hamburguesa.svg" width="30px" height="30px" alt="icono-hamburguesa"></label>
 		<div>
 			<img src="img/multiaccess-logo.svg" width="140px" height="16px" alt="Logo Multiaccess"/>
 		</div>
-		<nav>
+		<nav class="menu">
 			<ul>
 				<li>
 					<a href="#peliculas">Peliculas</a>
@@ -28,13 +30,33 @@
 				</li>
 			</ul>
 		</nav>
+	
 		<div class="icono-usuario">
 			<img src="img/icono-persona.svg" width="37px" height="37px" alt="Icono de usuario"/>
 		</div>
+	
 	</header>
 	
-	<main>
-		
+	<main class="pelicula">
+		<img src="img/poster-avatar-full.jpg" width="285px" height="442px" alt="poster original de la película Avatar"/>
+		<article class="datatecnica">
+			<div class="peli">
+				<h2>Avatar: Reestreno</h2>
+				<img src="img/estrellas.svg" width="118" height="17px" alt="calificación total de la película"/>
+			</div>
+			<section class="infopeli">
+				<h3>116min</h3>
+				<img src="img/sam13.svg" width="145px" height="30px" alt="clasificación SAM13-USA"/>
+				<h3>Aventura, Acción</h3>
+			</section>
+			<p>El reestreno en cines de la &eacute;pica avebtyra de Hanes Cameron, AVATAR, ganadora del Premio de la Academia® en 2009, la pel&iacute;cula m&acute;s exitosa de todos los tiempos, en 3D y grandes formatos. Las audiencias tendr&aacute;n ua vez m&aacute;s la oportunidad de viajar a trav&eacute;s del universo lejano del planeta de Pandora en el año 2154. Escrita y digirida por el ganador del Premio de la Academia® James Cameron. Nominada a nueve Premios de la Academia®, incluidos Mejor Pel&iacute;cula y Mejor director, la pel&iacute;cula gan&oacute; tres Premios Oscar®, a Mejor Fotograf&iacute;a, Diseño de Producci&oacute;n y Efectos Visuales.</p>
+			<div class="opciones">
+				<a href="compra.html"><input class="botones" type="submit" value="COMPRAR ENTRADAS"></a>
+				<input class="secundario" type="submit" value="TRAILER">
+				<input class="secundario" type="submit" value="RESEÑA">
+				<input class="secundario" type="submit" value="REPARTO">
+			</div>
+		</article>
 	</main>
 	
 	<footer>
