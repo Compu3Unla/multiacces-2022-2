@@ -9,10 +9,12 @@
 </head>
 <body>
 	<header>
+		<input type="checkbox" id="menu-hamburguesa">
+		<label for="menu-hamburguesa"><img src="img/icono-hamburguesa.svg" width="30px" height="30px" alt="icono-hamburguesa"></label>
 		<div>
 			<img src="img/multiaccess-logo.svg" width="140px" height="16px" alt="Logo Multiaccess"/>
 		</div>
-		<nav>
+		<nav class="menu">
 			<ul>
 				<li>
 					<a href="#peliculas">Peliculas</a>
@@ -28,16 +30,17 @@
 				</li>
 			</ul>
 		</nav>
+	
 		<div class="icono-usuario">
 			<img src="img/icono-persona.svg" width="37px" height="37px" alt="Icono de usuario"/>
 		</div>
-	</header>
 	
+	</header>	
 	<main>
 		<aside class="scroll">	<!--TICKET DE COMPRA-->
 			<section class="fijo">
 				<div class="volver">
-					<a>
+					<a href="peliculas.html">
 						<img src="img/butt_back.svg" width="35px" height="35px" alt="elemento para retroceder"/>
 					</a>
 				</div>
@@ -133,6 +136,7 @@
 			<h2>entradas</h2>
 			<article class="carrecard">
 				<div class="entrada">
+					<img src="img/combo-general.jpg" width="230px" height="140px" alt="imagen referencial de entrada general"/>
 					<h3>general</h3>
 					<p class="infobuy">V&aacute;lido por una entrada a precio general.</p>
 					<p class="precio">$0000</p>
@@ -143,6 +147,7 @@
 					</div>
 				</div>
 				<div class="entrada">
+					<img src="img/combo-50off.jpg" width="230px" height="140px" alt="imagen referencial de entradas con descuento"/>
 					<h3>50% OFF miercoles</h3>
 					<p class="infobuy">Descuento en todas las entradas 2D, 3D y XD.</p>
 					<p class="precio">$0000</p>
@@ -153,6 +158,7 @@
 					</div>
 				</div>
 				<div class="entrada">
+					<img src="img/combo-2x1.jpg" width="230px" height="140px" alt="imagen referencial de promoción dos por uno"/>
 					<h3>2x1 multifan</h3>
 					<p class="infobuy">promoci&oacute;n disponible para socios multifan.</p>
 					<p class="precio">$0000</p>
@@ -163,6 +169,7 @@
 					</div>
 				</div>
 				<div class="entrada">
+					<img src="img/combo-jubilados.jpg" width="230px" height="140px" alt="imagen referencial de descuesto para jubilados"/>
 					<h3>jubilados</h3>
 					<p class="infobuy">Beneficio especial para personas de la tercera edad.</p>
 					<p class="precio">$0000</p>
@@ -441,11 +448,11 @@
 				</article>
 				<section class="referencia">
 					<div>
-						<h5></h5>
+						<h5 class="col-nar"></h5>
 						<h4>tus butacas</h4>
 					</div>
 					<div>
-						<h5></h5>
+						<h5 class="col-vio"></h5>
 						<h4>Disponibles</h4>
 					</div>
 					<div>
@@ -453,7 +460,7 @@
 						<h4>No disponibles</h4>
 					</div>
 					<div>
-						<h5></h5>
+						<h5>D</h5>
 						<h4>butacas d-box</h4>
 					</div>
 				</section>
