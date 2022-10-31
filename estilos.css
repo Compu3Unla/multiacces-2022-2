@@ -44,6 +44,7 @@ p {
 /*-------------------------------HEADER-------------------------------*/
 header {
 	width: 100%;
+	height: 60px;
 	background-color: #130D31;
 	display: flex;
 	flex-wrap: nowrap;
@@ -848,7 +849,8 @@ h5 {
 }
 
 	header label {
-		display: block;
+		display: flex;
+		justify-content: flex-end;
 	}
 
 	header div img {
@@ -858,26 +860,29 @@ h5 {
 	.menu {
 		position: absolute;
 		background-color: #130D31;
-		width: 50%;
-		margin-left: -50%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-left: -100%;
 		transition: all 0.5s;
 	}
 	
 	.menu ul {
 		flex-direction: column;
+		width: 100%;
 	}
 	
 	.menu li {
 		border-top: 1px solid #EAEAEA;
 	}
 	
-	#menu-hamburguesa:checked ~ .menu {
-		margin: 0;
+	.menu a {
+		padding-top: 12px;
+		text-align: center;
 	}
 	
-	.menu a {
-		padding: 10px 15px;
-		text-align: start;
+	#menu-hamburguesa:checked ~ .menu {
+		margin: 0;
 	}
 
 	.icono-usuario {
