@@ -7,7 +7,6 @@
 	color: #EAEAEA;
 }
 
-
 html {
 	scroll-behavior: smooth;
 	background-image: url("img/background.jpg");
@@ -53,6 +52,7 @@ header {
 
 #menu-hamburguesa {
 	display: none;
+	
 }
 
 header label {
@@ -671,6 +671,7 @@ h5 {
 	margin-top: 22px;
 }
 .entradatos {
+	color: #222222;
 	width: 100%;
 	height: 39px;
 	border-radius: 10px;
@@ -681,6 +682,10 @@ h5 {
 	outline: none;
 	border: none;
 }
+option {
+	color: #222222;
+}
+
 .dobledata {
 	display: flex;
 	justify-content: space-between;
@@ -784,119 +789,104 @@ h5 {
 @media screen and (max-width:360px){
 	/*falta agregar el background*/
 
-	main {
-		margin: 0;
-		padding: 0;
-	}
-	html {
-		background-image: url("img/background-celu.jpg");
-		width: 100%;
-		height: 100%;
-	}
-
-	h1 {
-		font-size: 25px;
-		margin-bottom: 10px;
-		/*"Inicia sesion"*/
-	}
-
-	h2 {
-		font-size: 16px;
-		/*titulos de fecha, formato, candy, etc*/
-	}
-
-	h3 {
-		font-size: 13px;
-		font-weight: 700;
-		text-transform: uppercase;
-		/*botones*/
-	}
+main {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-image: url("img/background-celu.jpg");
+	width: 100%;
+	height: 100%;
+}
+h1 {
+	font-size: 25px;
+	margin-bottom: 10px;
+	/*"Inicia sesion"*/
+}
+h2 {
+	font-size: 16px;
+	/*titulos de fecha, formato, candy, etc*/
+}
+h3 {
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	/*botones*/
+}
 	/*----------------inicio de sesión----------------*/
-	.form {
-		width: 100%;
-		padding: 0;
-		margin-top: 100px;
+.form {
+	width: 100%;
+	padding: 0;
+	margin-top: 100px;
 	}
+.form a:hover {
+	color: #F88312;
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
+}
+.form p {
+	color: #EAEAEA;
+	font-weight: 500;
+	font-size: 16px;
+	margin-top: 100px;
+}
 
-	.form a:hover {
-		color: #F88312;
-		font-weight: 500;
-		font-size: 16px;
-		text-decoration: none;
-	}
-	.form p {
-		color: #EAEAEA;
-		font-weight: 500;
-		font-size: 16px;
-		margin-top: 100px;
-	}
-
-	.form .botones {
-		width: 240px;
-		font-size: 15px;
-	}
-	.form .botones:hover{
-		background: #EAEAEA;
-		color: #F88312;
-	}
-	
+.form .botones {
+	width: 240px;
+	font-size: 15px;
+}
+.form .botones:hover{
+	background: #EAEAEA;
+	color: #F88312;
+}	
 /*-------------------------------HEADER-------------------------------*/
-	header {
+header {
 	width: 100%;
 	background-color: #130D31;
 	display: block;
 }
-
-	header label {
-		display: block;
+header label {
+	display: block;
 	}
-
-	header div img {
-		display: none;
-	}
-	
-	.menu {
+header div img {
+	display: none;
+}
+.menu {
 		position: absolute;
 		background-color: #130D31;
 		width: 50%;
 		margin-left: -50%;
 		transition: all 0.5s;
-	}
-	
-	.menu ul {
+}
+.menu ul {
 		flex-direction: column;
-	}
-	
-	.menu li {
+}
+.menu li {
 		border-top: 1px solid #EAEAEA;
-	}
-	
-	#menu-hamburguesa:checked ~ .menu {
+}
+#menu-hamburguesa:checked ~ .menu {
 		margin: 0;
-	}
-	
-	.menu a {
+}
+.menu a {
 		padding: 10px 15px;
 		text-align: start;
-	}
+}
 
-	.icono-usuario {
+.icono-usuario {
 		display: none;
-	}
-/*------------------------------*/
-
-	/*--------------------CARRUSEL INICIO------------------*/
-	.slide {
+}
+/*--------------------CARRUSEL INICIO------------------*/
+.slide {
 		width: 100%;
-	}
-	.slide img {
+}
+.slide img {
 		margin: 30px 7px 30px 5px;
 		width: 348px;
 		height: auto;
-		}
+}
 /*--------------------CARRUSEL FIN------------------*/
 
-	
 /*---------------------------PELICULAS-------------------------*/
 
 .buscador-lupa {
@@ -905,7 +895,6 @@ h5 {
 	align-items: center;
 	margin: 70px 10px 30px 10px;
 }
-
 .titular {
 	margin-left: 24px;
 	margin-bottom: 10px;
@@ -958,45 +947,39 @@ h5 {
 }
 /*--------------------FOOTER------------------------*/
 .footer {
-    flex-direction: row;
-    flex-wrap: wrap;
+	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: flex-start;
-	}
-
+}
 .contactenos-footer h4 {
 	display:none;
 }
 .contactenos-footer h3 {
-		display: none;
-	}
+	display: none;
+}
 .contacto {
-		display:none;
-	}
-	
+	display:none;
+}
 .bot-foo {
-    padding-top: 0px;
-	}
+	padding-top: 0px;
+}
 
 .logo_redes {
-    margin: 40px 40px 0px 40px;
+	margin: 40px 40px 0px 40px;
 }
 
 .contactenos-footer {
-    margin: 0px 40px;
+	margin: 0px 40px;
 }
-
 .bot-foo img {
-    margin: 0px 40px;
-    padding: 10px 0px;
+	margin: 0px 40px;
+	padding: 10px 0px;
 }
-
 .iconos-redes img {
 	width: 55px;
 	height: 55px;
-	}
-	
-.logo_redes img {
-    margin: 6px 5px 6px 0px;
 }
-
+.logo_redes img {
+	margin: 6px 5px 6px 0px;
+}
 }
