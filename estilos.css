@@ -7,7 +7,6 @@
 	color: #EAEAEA;
 }
 
-
 html {
 	scroll-behavior: smooth;
 	background-image: url("img/background.jpg");
@@ -51,7 +50,9 @@ header {
 	align-items: center;
 	justify-content: space-between;
 }
-
+.menu a:hover {
+	color: #7300BD;
+}
 #menu-hamburguesa {
 	display: none;
 }
@@ -317,7 +318,6 @@ header div img {
 	  z-index: -1;
 }
 
-
 /*--------------------CARRUSEL INICIO------------------*/
 
 .slide {
@@ -356,8 +356,6 @@ header div img {
 	100% {margin-left: -300%;}
 }
 /*--------------------CARRUSEL FIN------------------*/
-
-
 
 .estrenos {
 	/*border: 1px solid white; /*Para identificar las dimensiones del contenedor luego se debe eliminar*/
@@ -398,7 +396,6 @@ header div img {
 .titular {
 	margin-left: 96px;
 }
-
 
 /*-----------------------------COMPRA-----------------------------*/
 
@@ -682,6 +679,9 @@ h5 {
 	outline: none;
 	border: none;
 }
+option {
+	color: dimgray;
+}
 .dobledata {
 	display: flex;
 	justify-content: space-between;
@@ -697,6 +697,7 @@ h5 {
 	justify-content: space-between;
 }
 .fechatarjeta input {
+	color: dimgray;
 	width: 46%;
 }
 .terminosycondiciones {
@@ -785,122 +786,108 @@ h5 {
 @media screen and (max-width:360px){
 	/*falta agregar el background*/
 
-	main {
-		margin: 0;
-		padding: 0;
-	}
-	html {
-		background-image: url("img/background-celu.jpg");
-		width: 100%;
-		height: 100%;
-	}
+main {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-image: url("img/background-celu.jpg");
+	width: 100%;
+	height: 100%;
+}
 
-	h1 {
-		font-size: 25px;
-		margin-bottom: 10px;
-		/*"Inicia sesion"*/
-	}
+h1 {
+	font-size: 25px;
+	margin-bottom: 10px;
+	/*"Inicia sesion"*/
+}
 
-	h2 {
-		font-size: 16px;
-		/*titulos de fecha, formato, candy, etc*/
-	}
-
-	h3 {
-		font-size: 13px;
-		font-weight: 700;
-		text-transform: uppercase;
-		/*botones*/
-	}
-	/*----------------inicio de sesión----------------*/
-	.form {
-		width: 100%;
-		padding: 0;
-		margin-top: 100px;
-	}
-
-	.form a:hover {
-		color: #F88312;
-		font-weight: 500;
-		font-size: 16px;
-		text-decoration: none;
-	}
-	.form p {
-		color: #EAEAEA;
-		font-weight: 500;
-		font-size: 16px;
-		margin-top: 100px;
-	}
-
-	.form .botones {
-		width: 240px;
-		font-size: 15px;
-	}
+h2 {
+	font-size: 16px;
+	/*titulos de fecha, formato, candy, etc*/
+}
+h3 {
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	/*botones*/
+}
+/*----------------inicio de sesión----------------*/
+.form {
+	width: 100%;
+	padding: 0;
+	margin-top: 100px;
+}
+.form a:hover {
+	color: #F88312;
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
+}
+.form p {
+	color: #EAEAEA;
+	font-weight: 500;
+	font-size: 16px;
+	margin-top: 100px;
+}
+.form .botones {
+	width: 240px;
+	font-size: 15px;
+}
 	.form .botones:hover{
-		background: #EAEAEA;
-		color: #F88312;
-	}
-	
+	background: #EAEAEA;
+	color: #F88312;
+}
 /*-------------------------------HEADER-------------------------------*/
-	header {
+header {
 	width: 100%;
 	background-color: #130D31;
 	display: block;
 }
+header label {
+	display: flex;
+	justify-content: flex-end;
+}
+header div img {
+	display: none;
+}
+.menu {
+	position: absolute;
+	background-color: #130D31;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-left: -100%;
+	transition: all 0.5s;
+}
+.menu ul {
+	flex-direction: column;
+	width: 100%;
+}
+.menu li {
+	border-top: 1px solid #EAEAEA;
+}
+.menu a {
+	padding-top: 12px;
+	text-align: center;
+}
+#menu-hamburguesa:checked ~ .menu {
+	margin: 0;
+}
 
-	header label {
-		display: flex;
-		justify-content: flex-end;
-	}
-
-	header div img {
-		display: none;
-	}
-	
-	.menu {
-		position: absolute;
-		background-color: #130D31;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		margin-left: -100%;
-		transition: all 0.5s;
-	}
-	
-	.menu ul {
-		flex-direction: column;
-		width: 100%;
-	}
-	
-	.menu li {
-		border-top: 1px solid #EAEAEA;
-	}
-	
-	.menu a {
-		padding-top: 12px;
-		text-align: center;
-	}
-	
-	#menu-hamburguesa:checked ~ .menu {
-		margin: 0;
-	}
-
-	.icono-usuario {
-		display: none;
-	}
-/*------------------------------*/
-
-	/*--------------------CARRUSEL INICIO------------------*/
-	.slide {
-		width: 100%;
-	}
-	.slide img {
-		margin: 30px 7px 30px 5px;
-		width: 348px;
-		height: auto;
-		}
+.icono-usuario {
+	display: none;
+}
+/*--------------------CARRUSEL INICIO------------------*/
+.slide {
+	width: 100%;
+}
+.slide img {
+	margin: 30px 7px 30px 5px;
+	width: 348px;
+	height: auto;
+}
 /*--------------------CARRUSEL FIN------------------*/
-
 	
 /*---------------------------PELICULAS-------------------------*/
 
@@ -910,7 +897,6 @@ h5 {
 	align-items: center;
 	margin: 70px 10px 30px 10px;
 }
-
 .titular {
 	margin-left: 24px;
 	margin-bottom: 10px;
@@ -959,7 +945,6 @@ h5 {
 }
 .logo_redes img {
 	margin: 6px 5px 6px 0px;
-
 }
 /*--------------------FOOTER------------------------*/
 .footer {
@@ -967,41 +952,34 @@ h5 {
     flex-wrap: wrap;
 	justify-content: flex-start;
 	}
-
 .contactenos-footer h4 {
 	display:none;
 }
 .contactenos-footer h3 {
-		display: none;
+	display: none;
 	}
 .contacto {
-		display:none;
+	display:none;
 	}
-	
 .bot-foo {
-    padding-top: 0px;
-	}
+	padding-top: 0px;
+}
 
 .logo_redes {
-    margin: 40px 40px 0px 40px;
+	margin: 40px 40px 0px 40px;
 }
-
 .contactenos-footer {
-    margin: 0px 40px;
+	margin: 0px 40px;
 }
-
 .bot-foo img {
-    margin: 0px 40px;
-    padding: 10px 0px;
+	margin: 0px 40px;
+	padding: 10px 0px;
 }
-
 .iconos-redes img {
 	width: 55px;
 	height: 55px;
-	}
-	
-.logo_redes img {
-    margin: 6px 5px 6px 0px;
 }
-
+.logo_redes img {
+	margin: 6px 5px 6px 0px;
+}
 }
