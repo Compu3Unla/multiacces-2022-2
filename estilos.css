@@ -43,6 +43,7 @@ p {
 /*-------------------------------HEADER-------------------------------*/
 header {
 	width: 100%;
+	height: 60px;
 	background-color: #130D31;
 	display: flex;
 	flex-wrap: nowrap;
