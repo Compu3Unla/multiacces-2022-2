@@ -3,11 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Multiaccess - Pelicula</title>
 <link href="estilos.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Multiaccess - Home</title>
 </head>
-
 <body>
 	<header>
 		<input type="checkbox" id="menu-hamburguesa">
@@ -37,29 +36,52 @@
 		</div>
 	
 	</header>
-	
-	<main class="pelicula">
-		<img src="img/poster-avatar-full.jpg" width="285px" height="442px" alt="poster original de la película Avatar"/>
-		<article class="datatecnica">
-			<div class="peli">
-				<h2>Avatar: Reestreno</h2>
-				<img src="img/estrellas.svg" width="118" height="17px" alt="calificación total de la película"/>
+	<main>
+		<section class="buscador-lupa">
+			<div class="lupa"> 
+			<img src="img/icono-lupa.svg" alt="Lupa icono"/> 
 			</div>
-			<section class="infopeli">
-				<h3>116min</h3>
-				<img src="img/sam13.svg" width="145px" height="30px" alt="clasificación SAM13-USA"/>
-				<h3>Aventura, Acción</h3>
+			<input class="buscador" type="search" name="buscador" id="search" placeholder="Buscar pelicula">
+		</section>
+		<div class="slide">
+			<ul>
+				<li><img src="img/publicidad-blackadam.jpg" width="1192px" height="353px" alt="Publicidad de Black Adam"/></li>
+				<li><img src="img/publicidad-wakandaxsiempre.jpg" width="1192px" height="353px" alt="publicidad-wakandaxsiempre"/></li>
+				<li><img src="img/publicidad-onepiece.jpg" width= "1192px" height="353px" alt="publicidad-onepiece"/></li>
+				<li><img src="img/publicidad-2X1.jpg" width="1192px" height="353px" alt= "publicidad-2x1"/></li>
+			</ul>
+		</div>
+		<section>
+			<section>
+				<h2 class="titular">ESTRENOS</h2>
+				<div class="estrenos">
+					<img src="img/poster-avatar.jpg" width="180" height="280" alt="Avatar:reestreno"/>
+					<img src="img/poster-lahuerfana.jpg" width="180" height="280" alt="La huerfana"/>
+					<img src="img/poster-minions.jpg" width="180" height="280" alt="Los minions"/>
+					<img src="img/poster-masrespeto.jpg" width="180" height="280" alt="Mas respeto que soy tu madre"/>
+					<img src="img/poster-bowie.jpg" width="180" height="280" alt="Bowie"/>
+					<img src="img/poster-notepreocupes.jpg" width="180" height="280" alt="No te preocupes cariño"/>
+				</div>
 			</section>
-			<p>El reestreno en cines de la &eacute;pica avebtyra de Hanes Cameron, AVATAR, ganadora del Premio de la Academia® en 2009, la pel&iacute;cula m&acute;s exitosa de todos los tiempos, en 3D y grandes formatos. Las audiencias tendr&aacute;n ua vez m&aacute;s la oportunidad de viajar a trav&eacute;s del universo lejano del planeta de Pandora en el año 2154. Escrita y digirida por el ganador del Premio de la Academia® James Cameron. Nominada a nueve Premios de la Academia®, incluidos Mejor Pel&iacute;cula y Mejor director, la pel&iacute;cula gan&oacute; tres Premios Oscar®, a Mejor Fotograf&iacute;a, Diseño de Producci&oacute;n y Efectos Visuales.</p>
-			<div class="opciones">
-				<a href="compra.html"><input class="botones" type="submit" value="COMPRAR ENTRADAS"></a>
-				<input class="secundario" type="submit" value="TRAILER">
-				<input class="secundario" type="submit" value="RESEÑA">
-				<input class="secundario" type="submit" value="REPARTO">
-			</div>
-		</article>
+			<section>
+				<h2 class="titular">LISTA DE PELICULAS</h2>
+				<div class="catalogo">
+					<img src="img/poster-amsterdan.jpg" width="180" height="280" alt="amsterdan"/>
+					<img src="img/poster-lamujerrey.jpg" width="180" height="280" alt="la mujer rey"/>
+					<img src="img/poster-lahuerfana.jpg" width="180" height="280" alt="la huerfana"/>
+					<img src="img/poster-lunaticos.jpg" width="180" height="280" alt="lunaticos"/>
+					<img src="img/poster-argentina1985.jpg" width="180" height="280" alt="argentina 1985"/>
+					<img src="img/poster-sonrie.jpg" width="180" height="280" alt="sonrie"/>
+					<img src="img/poster-blackadam.jpg" width="180" height="280" alt="black adam"/>
+					<img src="img/poster-30noches.jpg" width="180" height="280" alt="30 noches con mi ex"/>
+					<img src="img/poster-escalera.jpg" width="180" height="280" alt="escalera al infierno"/>
+					<img src="img/poster-tadeo.jpg" width="180" height="280" alt="tadeo el explorador 3"/>
+					<img src="img/poster-elperro.jpg" width="180" height="280" alt="el perro samurai"/>
+					<img src="img/poster-astroscope.jpg" width="180" height="280" alt="astroscope"/>
+				</div>
+			</section>
+		</section>
 	</main>
-	
 	<footer>
 		<section class="footer">
 			<article class="logo_redes">
@@ -100,6 +122,7 @@
 				</div>
 			</article>
 		</section>
-	</footer>
+</footer>
 </body>
+	
 </html>
