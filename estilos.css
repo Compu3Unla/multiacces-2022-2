@@ -739,7 +739,7 @@ option {
 
 .scroll {
 	position: absolute;
-	top: 190px;
+	top: 120px;
 	width: 480px;
 	height: 3970px;
 }
@@ -1017,7 +1017,7 @@ header div img {
 	position: relative;
 	z-index: 5;
 }
-.botones {
+.opciones .botones {
 	width: 286px;
 	margin: 0px;
 	position: relative;
@@ -1025,66 +1025,6 @@ header div img {
 	top: -138%;
 	left: -48%;
 }
-/*.datatecnica {
-	margin: 20px 87px 0 108px;
-	width: 100%;
-	box-sizing: border-box;
-}
-.peli {
-	display: flex;
-	align-items: center;
-
-}
-.peli img {
-	margin-left: 0px;
-	padding-bottom: 2px;
-}
-.infopeli{
-	display: flex;
-	width: 60%;
-	max-width:800px;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	margin-top: 25px;
-}
-.infopeli h3 {
-	font-weight: 400;
-	text-transform: capitalize;
-}
-.datatecnica p {
-	width: 670px;
-	margin: 25px 0 36px;
-}
-.opciones {
-	width: 90%;
-	max-width: 800px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.opciones .botones {
-	width: 280px;
-	margin: 0px;
-	
-}
-.secundario {
-	background-color: #7300BD;
-	width: 125px;
-	margin-left: 10px;
-	padding: 12px 6px;
-	border-radius: 30px;
-	border: none;
-	color: #EAEAEA;
-	font-size: 18px;
-	font-family: "Montserrat";
-	font-weight: 700;
-	transition: 5s all ease;
-	overflow: hidden;
-}
-}
-
-
 /*--------------------FOOTER------------------------*/
 .footer {
 	flex-direction: row;
