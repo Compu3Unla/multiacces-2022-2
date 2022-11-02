@@ -865,6 +865,7 @@ header div img {
 	justify-content: center;
 	margin-left: -100%;
 	transition: all 0.5s;
+	z-index: 20;
 }
 .menu ul {
 	flex-direction: column;
@@ -887,6 +888,7 @@ header div img {
 /*--------------------CARRUSEL INICIO------------------*/
 .slide {
 	width: 100%;
+	margin: 10px 0 30px 0px;
 }
 .slide img {
 	margin: 30px 7px 30px 5px;
@@ -952,6 +954,137 @@ header div img {
 .logo_redes img {
 	margin: 6px 5px 6px 0px;
 }
+/*---------------------------PELICULA-AVATAR-------------------------*/
+.pelicula {
+	display: flex;
+	margin: 15px;
+}
+.pelicula img {
+	border-radius: 10px;
+	height: 190px;
+}
+.peli {
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+.datatecnica {
+	margin: 0 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.peli {
+	display: flex;
+	align-items: flex-start;
+	margin: 0;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+.peli img {
+	width: auto;
+	height: 15px;
+	margin: 10px 0;
+	top: -25px;
+	position: relative;
+	z-index: 7;
+}
+.peli h2 {
+	font-size: 16px;
+	top: 38px;
+	position: relative;
+	z-index: 6;
+}
+.infopeli img {
+	width: 112px;
+	height: auto;
+	position: relative;
+	z-index: 5;
+	left: -55px;
+	top: 10px;
+}
+.infopeli h3 {
+	top: -33px;
+	margin: 34px 0;
+	position: relative;
+	z-index: 6;
+	font-weight: bold;
+}
+.datatecnica p {
+	width: 115%;
+	font-size: 15px;
+	top: -8%;
+	left: -48%;
+	position: relative;
+	z-index: 5;
+}
+.botones {
+	width: 286px;
+	margin: 0px;
+	position: relative;
+	z-index: 4;
+	top: -138%;
+	left: -48%;
+}
+/*.datatecnica {
+	margin: 20px 87px 0 108px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.peli {
+	display: flex;
+	align-items: center;
+
+}
+.peli img {
+	margin-left: 0px;
+	padding-bottom: 2px;
+}
+.infopeli{
+	display: flex;
+	width: 60%;
+	max-width:800px;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 25px;
+}
+.infopeli h3 {
+	font-weight: 400;
+	text-transform: capitalize;
+}
+.datatecnica p {
+	width: 670px;
+	margin: 25px 0 36px;
+}
+.opciones {
+	width: 90%;
+	max-width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.opciones .botones {
+	width: 280px;
+	margin: 0px;
+	
+}
+.secundario {
+	background-color: #7300BD;
+	width: 125px;
+	margin-left: 10px;
+	padding: 12px 6px;
+	border-radius: 30px;
+	border: none;
+	color: #EAEAEA;
+	font-size: 18px;
+	font-family: "Montserrat";
+	font-weight: 700;
+	transition: 5s all ease;
+	overflow: hidden;
+}
+}
+
+
 /*--------------------FOOTER------------------------*/
 .footer {
 	flex-direction: row;
