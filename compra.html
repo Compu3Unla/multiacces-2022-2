@@ -37,23 +37,7 @@
 	
 	</header>	
 	<main>
-		<aside class="scroll">	<!--TICKET DE COMPRA-->
-			<section class="fijo">
-				<div class="volver">
-					<a href="peliculas.html">
-						<img src="img/butt_back.svg" width="35px" height="35px" alt="elemento para retroceder"/>
-					</a>
-				</div>
-				<section class="ticket">
-					<h3>Avatar 3D esp</h3>
-					<p class="sepa">CINEMARK PALERMO</p>
-					<p>23/10 - 11:00HS</p>
-					<p class="sepa">BUTACAS N°: F11 F12 F13</p>
-					<p class="sepa">COMBO CHELA (2) + COMBO MULTIFAN (1)</p>
-					<p class="total">TOTAL: $4310</p>
-				</section>
-			</section>
-		</aside>
+		
 		
 		<section class="procesocompra">	<!--FECHA Y FORMATO-->
 			<h2>fecha y formato</h2>
@@ -467,67 +451,80 @@
 			</section>
 		</section>
 		
-		<section class="procesocompra">	<!--COMPRA-->
+		<section class="procesocompra" method="post" action="" target="" enctype="text/plain">	<!--COMPRA-->
 			<h2>Datos para la compra</h2>
-			<section class="formulario"> <!--DEBERIA CAMBIARSE LA ETIQUETA A FORM?-->
-				<div>
-					<p>Email</p>
-					<input class="entradatos" type="email" name="email" placeholder="ejemplo@gmail.com">
-				</div>
-				<section class="dobledata">
-					<div class="datoss">
+			<form class="formulario"> <!--En css aparece tanto la etiqueta form como la clase, debería corregirse ya que el uso de ambas es innecesaria (al menos en esta pagina) -->
+				<label for="email">Email</label>
+				<input class="entradatos" type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required>
+				<div class="datoss">
 						<div>
-							<p>nombre del titular</p>
-							<input class="entradatos" type="text" name="titular" placeholder="Juan Perez">
+							<label for="titular">nombre del titular</label>
+							<input class="entradatos" type="text" name="titular" id="titular" placeholder="Juan Perez" required>
 						</div>
 						<div>
-							<p>Numero de tarjeta</p>
-							<input class="entradatos" type="number" name="tarjeta" placeholder="0000 0000 0000 0000">
+							<label for="dni">dni del titular</label>
+							<input class="entradatos" type="number" name="dni" id="dni" placeholder="12.345.678" required>
+						</div>
+						
+					</div>
+				<div class="datoss">
+						<div>
+							<label for="tarjeta">numero de tarjeta</label>
+							<input class="entradatos" type="number" name="tarjeta" id="tarjeta" placeholder="0000 0000 0000 0000" required>
+						</div>
+						<div>
+							<label for="contrasena">codigo de seguridad</label>
+							<input class="entradatos" type="password" name="contrasena" id="contrasena" maxlength="3" placeholder="123" required>
 						</div>
 					</div>
-					<div class="datoss">
-						<div>
-							<p>dni del titular</p>
-							<input class="entradatos" type="number" name="dni" placeholder="12.345.678">
-						</div>
-						<div>
-							<p>codigo de seguridad</p>
-							<input class="entradatos" type="password" name="contraseña" placeholder="123">
-						</div>
-					</div>
-				</section>
 				<div class="fechatarjeta">
-					<p>fecha de vencimiento</p>
-					<div>	
-						<input class="entradatos" type="date" name="fecha vencimiento">
-						<input class="entradatos" type="date" name="fecha emision">
+					<label for="fecha de">fecha de vencimiento</label>
+					<div>
+						<input class="entradatos" type="date" name="fecha de" id="fecha de" required>
+						<input class="entradatos" type="date" name="fecha hasta" id="fecha hasta" required>
 					</div>
 				</div>
-				<div>
-					<p>Medio de pago</p>
-					<select class="entradatos" name="medio pago"> 
-						<option value="defaul" selected> Por favor seleccione uno...</option>
-						<option value="pago1">Visa - Debito/Credito</option>
-						<option value="pago2">MasterCard</option>
-						<option value="pago3">Tarjeta Naranja</option>
-						<option value="pago4">Cencosud</option>
-						<option value="pago5">MercadoPago</option>
-					</select>
-				</div>
+				<label for="medio pago">Medio de pago</label>
+				<select class="entradatos" name="medio pago" id="medio pago"> 
+					<option value="defaul" selected> Por favor seleccione uno</option>
+					<option value="pago1">Visa - Debito/Credito</option>
+					<option value="pago2">MasterCard</option>
+					<option value="pago3">Tarjeta Naranja</option>
+					<option value="pago4">Cencosud</option>
+					<option value="pago5">MercadoPago</option>
+				</select>
 				<section class="terminosycondiciones">
 					<div>
 						<input class="condiciones" type="checkbox" name="terminos legales">
 						<input class="condiciones" type="checkbox" name="declaracion legal">
 					</div>
 					<div>
-						<p>He le&iacute;do y aceptado los <a>t&eacute;rminos y condiciones*</a></p>
-						<p> Declaro que los menores para pel&iacute;culas P13 y P16 ingresan con sus tutores legales y/o con los permisos correspondientes.</p>
+						<label for="terminos legales">He le&iacute;do y aceptado los <a>t&eacute;rminos y condiciones*</a></label>
+						<label for="declaracion legal"> Declaro que los menores para pel&iacute;culas P13 y P16 ingresan con sus tutores legales y/o con los permisos correspondientes.</label>
 						<p>*Todos los campos son requeridos</p>
 					</div>
 				</section>
-			</section>
-			<input class="botones" type="submit" value="REALIZAR COMPRA">
+				<input class="botones" type="submit" value="REALIZAR COMPRA" formenctype="text/plain">
+			</form>
 		</section>
+		
+		<aside class="scroll">	<!--TICKET DE COMPRA-->
+			<section class="fijo">
+				<div class="volver">
+					<a href="peliculas.html">
+						<img src="img/butt_back.svg" width="35px" height="35px" alt="elemento para retroceder"/>
+					</a>
+				</div>
+				<section class="ticket">
+					<h3>Avatar 3D esp</h3>
+					<p class="sepa">CINEMARK PALERMO</p>
+					<p>23/10 - 11:00HS</p>
+					<p class="sepa">BUTACAS N°: F11 F12 F13</p>
+					<p class="sepa">COMBO CHELA (2) + COMBO MULTIFAN (1)</p>
+					<p class="total">TOTAL: $4310</p>
+				</section>
+			</section>
+		</aside>
 	</main>
 	<footer>
 		<section class="footer">
