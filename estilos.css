@@ -1063,7 +1063,7 @@ h5 {
 		width: 100%;
 		display: flex;
 		justify-content: center;
-		margin-left: 100%;
+		top: -200px;
 		transition: all 0.5s;
 		z-index: 20;
 	}
@@ -1083,7 +1083,7 @@ h5 {
 	}
 	
 	#menu-hamburguesa:checked ~ .menu {
-		margin: 0;
+		top: 50px;
 	}
 	
 	.icono-usuario {
