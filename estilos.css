@@ -662,7 +662,6 @@ h5 {
 
 /*.formulario,*/ form {
 	width: 616px;
-	border: 1px solid red; /*Sirve para corroborar que si también modifica algún otro campo*/
 }
 /*.formulario p,*/ .formulario label {
 	text-transform: uppercase;
@@ -955,76 +954,65 @@ header div img {
 	margin: 6px 5px 6px 0px;
 }
 /*---------------------------PELICULA-AVATAR-------------------------*/
-.pelicula {
-	display: flex;
-	margin: 15px;
-}
-.pelicula img {
-	border-radius: 10px;
-	height: 190px;
-}
-.peli {
-	display: flex;
-	align-items: center;
-	margin: 0;
-}
-.datatecnica {
-	margin: 0 15px;
-	width: 100%;
-	box-sizing: border-box;
-}
-.peli {
-	display: flex;
-	align-items: flex-start;
-	margin: 0;
-	justify-content: flex-start;
-	flex-direction: column;
-}
-.peli img {
-	width: auto;
-	height: 15px;
-	margin: 10px 0;
-	top: -25px;
-	position: relative;
-	z-index: 7;
-}
-.peli h2 {
-	font-size: 16px;
-	top: 38px;
-	position: relative;
-	z-index: 6;
-}
-.infopeli img {
-	width: 112px;
-	height: auto;
-	position: relative;
-	z-index: 5;
-	left: -55px;
-	top: 10px;
-}
-.infopeli h3 {
-	top: -33px;
-	margin: 34px 0;
-	position: relative;
-	z-index: 6;
-	font-weight: bold;
-}
-.datatecnica p {
-	width: 115%;
-	font-size: 15px;
-	top: -8%;
-	left: -48%;
-	position: relative;
-	z-index: 5;
-}
-.opciones .botones {
-	width: 286px;
-	margin: 0px;
-	position: relative;
-	z-index: 4;
-	top: -138%;
-	left: -48%;
-}
+	.pelicula {
+		margin: 15px 4%;
+		width: 96%;
+		box-sizing: border-box;
+	}
+	.pelimg {
+		border-radius: 10px;
+		height: 170px;
+		width: auto;
+		position: absolute;
+	}
+	.datatecnica {
+		margin: 0;
+	}
+	.peli {
+		margin-left: 120px;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		height: auto;
+		width: 200px;
+	}
+	.peli img {
+		height: auto;
+		margin: 5px 0 10px 0;
+	}
+	.infopeli {
+			margin-left: 120px;
+			margin-top: 16px;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	.infopeli img {
+		margin: 18px 0;
+		height: auto;
+	}
+	.datatecnica p {
+		width: 94%;
+		height: 126px;
+		overflow-x: scroll;
+	}
+	.opciones {
+		width: 330px;
+		justify-content: center;
+	}
+	.opciones a {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	.opciones .botones {
+		width: 310px;
+		font-size: 16px;
+	}
+	.secundario {
+		font-size: 16px;
+		margin: 15px 20px 15px 0;
+		width: 92%;
+	}
+
 /*--------------------FOOTER------------------------*/
 .footer {
 	flex-direction: row;
@@ -1061,7 +1049,6 @@ header div img {
 .logo_redes img {
 	margin: 6px 5px 6px 0px;
 }
-/*---------------------------PELICULA-------------------------*/
 	
 /*---------------------------COMPRA-------------------------*/
 	.procesocompra {
@@ -1076,7 +1063,10 @@ header div img {
 	margin-bottom: 18px;
 	}
 	.fondoc {background-color: rgba(234,234,234,0.00);}
-	.fondm {background-color: rgba(234,234,234,0.30)}
+	.fondm {
+		background-color: rgba(234,234,234,0.30);
+		border-radius: 10px;
+	}
 	
 	.dispodia {
 		padding-top: 0px;
@@ -1228,15 +1218,15 @@ header div img {
 	}
 	
 	.scroll {
-	width: 2%;
-	height: 4020px; /*altura del scroll*/
-	/*z-index: 1;*/
-}
+		width: 2%;
+		height: 4080px; /*altura del scroll*/
+		/*z-index: 1;*/
+	}
 	.fijo {
-	justify-content: center;
-	top: 70%;
-	width: 5000%;
-}
+		justify-content: center;
+		top: 70%;
+		width: 5000%;
+	}
 	.ticket {
 		background-image: none;
 		/*reemplazar por otra imagen?*/
@@ -1248,7 +1238,7 @@ header div img {
 		margin: 0 2%;
 		height: auto;
 		padding: 5px 5px 5px 65px;
-}
+	}
 	.ticket h3 {
 		margin-top: 12px;
 	}
@@ -1267,7 +1257,7 @@ header div img {
 		position: absolute;
 		left:0;
 		top: 30%
-}
+	}
 	
 	
 }
