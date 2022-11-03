@@ -438,23 +438,34 @@ header div img {
 }
 /*--------------------CARRUSEL FIN------------------*/
 
-.estrenos {
-	/*border: 1px solid white; /*Para identificar las dimensiones del contenedor luego se debe eliminar*/
-	height: 330px;
-	width: 1200px;
-	margin-left: 96px;
-	display: flex;
-	flex-wrap: nowrap;
-	align-items: center;
-	margin-bottom: 60px;
-}
-.estrenos img{
-	background-color: #EAEAEA;
-	height: 280px;
-	width: 180px;
-	border-radius: 20px;
-	margin: 10px 20px 10px 0px;
-}
+	.estrenos{
+		width: 1200px;
+    	height: 330px;
+    	display: flex;
+    	margin-left: 96px;
+    	margin-top: 20px;
+	}
+	
+	.estrenos figure {
+		width: 180px;
+		height: 280px;
+		overflow: hidden;
+		transition: all 500ms ease;
+		border-radius: 20px;
+		margin-right: 20px;
+	}
+	
+	.estrenos figure img {
+		width: 100%;
+		height: 100%;
+		transition: all 500ms ease;
+	}
+	
+	.estrenos figure img:hover{
+		transform: scale(1.2);
+		cursor: pointer;
+	}
+	
 .catalogo {
 	/*border: 1px solid white;*/
 	height: 630px;
@@ -985,22 +996,26 @@ header div img {
 	margin-left: 24px;
 	margin-bottom: 10px;
 }
-.estrenos {
-	/*border: 1px solid white; /*Para identificar las dimensiones del contenedor luego se debe eliminar*/
-	height: 820px;
-	width: 97%;
-	margin-left: 5px;
-	justify-content:space-evenly;
-	flex-wrap: wrap;
-	align-items: center;
-	margin-bottom: 10px;
+
+.estrenos{
+	height: 800px;
+    width: 345px;
+    margin-left: 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    margin-bottom: 10px;
 }
-.estrenos img{
-	height: 235px;
+
+.estrenos figure{
 	width: auto;
+    height: 235px;
 	margin: 0px;
 	border-radius: 5px;
-}
+	}
+	
 .catalogo {
 	/*border: 1px solid white;*/
 	height: 1610px;
