@@ -934,12 +934,13 @@ header div img {
 	display: none;
 }
 .menu {
-	position: absolute;
+	position: relative;
 	background-color: #130D31;
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	margin-left: 100%;
+	top: -220px;
+	/*margin-left: 100%;*/
 	transition: all 0.5s;
 	z-index: 20;
 }
@@ -955,7 +956,7 @@ header div img {
 	text-align: center;
 }
 #menu-hamburguesa:checked ~ .menu {
-	margin: 0;
+	top: 0px;
 }
 
 .icono-usuario {
