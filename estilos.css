@@ -863,7 +863,7 @@ h5 {
 		width: 100%;
 		display: flex;
 		justify-content: center;
-		margin-left: -100%;
+		margin-left: 100%;
 		transition: all 0.5s;
 	}
 	
