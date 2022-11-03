@@ -236,7 +236,7 @@ header div img {
 	font-size: 16px;
 	margin-top: 80px;
 }
-/*.form*/ .botones {
+.botones {
 	color: #EAEAEA;
 	width: 335px;
 	background: #F88312;
@@ -250,13 +250,13 @@ header div img {
 	transition: .5s all ease;
 	overflow: hidden;
 }
-.botones {
+.botones, .secundario {
 	webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 	transition: box-shadow 300ms ease-in-out, color 500ms ease-in-out;
 }
-.botones:hover {
-	box-shadow: 0 0 40px 10px #FFAF62 inset;
-	  z-index: -1;
+.botones:hover, .secundario:hover {
+	box-shadow: 0 0 40px 10px /*#FFAF62*/ rgba(234,234,234,0.70) inset;
+	z-index: -1;
 }
 .controls {
 	width: 70%;
@@ -416,14 +416,6 @@ header div img {
 	font-weight: 700;
 	transition: 5s all ease;
 	overflow: hidden;
-}
-.secundario { /*ALTERNATIVA, poner la animación tanto en botones y secundario, pasar el box shadow a #EAEAEA con una transparencia del 30% para que funcione en todos los botones independientemente de su color*/
-	webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-	transition: box-shadow 300ms ease-in-out, color 500ms ease-in-out;
-}
-.secundario:hover {
-	box-shadow: 0 0 40px 10px rgba(234,234,234,0.30) inset;
-	  z-index: -1;
 }
 
 /*--------------------CARRUSEL INICIO------------------*/
@@ -788,14 +780,9 @@ h5 {
 	outline: none;
 	border: none;
 }
-option {
-	color: dimgray;
-}
 .dobledata {
 	display: flex;
 	flex-direction: column;
-	/*justify-content: space-between;
-	background-color: red;*/
 }
 .datoss {
 	display: flex;
@@ -809,7 +796,7 @@ option {
 	display: flex;
 	justify-content: space-between;
 }
-.fechatarjeta input {
+.fechatarjeta input, option {
 	color: dimgray;
 	width: 46%;
 }
@@ -830,19 +817,6 @@ option {
 	width: 18px;
 	height: 18px;
 }
-/*.botones { 	
-/*Hace falta unificar la clase de botones para que sea uno solo*/
-	/*color: #EAEAEA;
-	width: 335px;
-	background: #F88312;
-	border: none;
-	padding: 12px;
-	margin: 15px;
-	font-size: 18px;
-	font-family: "Montserrat";
-	font-weight: 700;
-	border-radius: 30px;
-}*/
 
 .scroll {
 	position: absolute;
@@ -947,7 +921,7 @@ h3 {
 	width: 240px;
 	font-size: 15px;
 }
-	.form .botones:hover{
+.form .botones:hover{
 	background: #EAEAEA;
 	color: #F88312;
 }
@@ -1163,9 +1137,6 @@ header div img {
 		/*background-color: rgba(234,234,234,0.00);*/
 		width: 94%;
 		margin: 32px 3% 200px 3%;
-		/*position: relative;
-		z-index: 2;*/
-		/*Pendiente a corregir los margenes top y bottom*/
 	}
 	.procesocompra h2 {
 	margin-bottom: 18px;
@@ -1316,9 +1287,9 @@ header div img {
 
 	.fechatarjeta div {flex-direction: column;}
 	.fechatarjeta input {width: 100%;}
-/*.terminosycondiciones {}*/
-	.terminosycondiciones p, .terminosycondiciones label {}
-/*.terminosycondiciones a {}*/
+/*.terminosycondiciones {}
+.terminosycondiciones p, .terminosycondiciones label {}
+.terminosycondiciones a {}*/
 	.condiciones {margin: 18px 0 11px 0 ;}
 	form input[type=submit] {
 		width: 90%;
@@ -1328,7 +1299,6 @@ header div img {
 	.scroll {
 		width: 2%;
 		height: 4080px; /*altura del scroll*/
-		/*z-index: 1;*/
 	}
 	.fijo {
 		justify-content: center;
@@ -1337,9 +1307,6 @@ header div img {
 	}
 	.ticket {
 		background-image: none;
-		/*reemplazar por otra imagen?*/
-		/*background-repeat: no-repeat;
-		background-size: contain;*/
 		background-color: #7300bd;
 		border: 4px solid #D9D9D9;
 		width: 96%;
