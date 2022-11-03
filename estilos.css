@@ -44,10 +44,11 @@ p {
 }
 /*-------------------------------SPLASH-------------------------------*/
 
-/*.splash{
+
+#splash{
 	background-image:url("img/splash-background.jpg");
 	background-attachment: fixed;
-}*/
+}
 .boton {
 	padding: 0;
 	color: none;
