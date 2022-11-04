@@ -384,7 +384,18 @@ header div img {
 	display: flex;
 	margin: 80px 0 56px 94px;
 }
-
+.back {
+	position: absolute;
+	top: 140px;
+	left: 0;
+	background-color: #0E0926;
+	width: 70px;
+	height: 70px;
+	border-radius: 0 10px 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .pelicula img {
 	border-radius: 20px;
 }
@@ -408,7 +419,7 @@ header div img {
 .infopeli{
 	display: flex;
 	width: 60%;
-	max-width:800px;
+	max-width: 600px;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
@@ -449,7 +460,7 @@ header div img {
 	font-size: 18px;
 	font-family: "Montserrat";
 	font-weight: 700;
-	transition: 5s all ease;
+	transition: .5s all ease;
 	overflow: hidden;
 }
 
@@ -1177,6 +1188,12 @@ h5 {
 		margin: 15px 4%;
 		width: 96%;
 		box-sizing: border-box;
+	}
+	.back {
+		z-index: 18;
+		top: 75px;
+		width: 48px;
+		height: 48px;
 	}
 
 	.pelimg {
