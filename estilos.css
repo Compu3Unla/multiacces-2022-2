@@ -166,7 +166,7 @@ header {
 	color: #7300BD;
 }
 
-#menu-hamburguesa {
+#menu-hamburguesa, .imamedia {
 	display: none;
 }
 
@@ -1067,6 +1067,12 @@ h5 {
 	header div img {
 		display: none;
 	}
+	.imamedia {
+		display: block;
+		position: absolute;
+		top: 12px;
+		left: 10px;
+	}
 	
 	.menu {
 		position: absolute;
@@ -1105,13 +1111,14 @@ h5 {
 /*--------------------CARRUSEL INICIO------------------*/
 	
 	.slide {
-		width: 100%;
-		margin: 10px 0 30px 0px;
+		width: 348px;
+		margin: 10px 10px 30px 10px;
+		box-sizing: border-box;
 	}
 	
 	.slide img {
-		margin: 30px 7px 30px 5px;
-		width: 348px;
+		margin: 10px 0;
+		width: 340px;
 		height: auto;
 	}
 	
@@ -1119,9 +1126,9 @@ h5 {
 
 	.buscador-lupa {
 		display: none;
-		justify-content: flex-start;
+		/*justify-content: flex-start;
 		align-items: center;
-		margin: 70px 10px 30px 10px;
+		margin: 70px 10px 30px 10px;*/
 	}
 	
 	.titular {
