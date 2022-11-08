@@ -1471,11 +1471,15 @@ h5:hover {
 	
 	.dispodia {
 		padding-top: 0px;
-		/*pendiente corregir para que solo se vean cuatro dias y quede con scroll horizontal*/
+		overflow-y: scroll;
+		justify-content: space-between;
 	}
 	
-	.dispodia h3 {font-size: 16px;}
-/*section .fondoc {}*/
+	.dispodia h3 {
+		font-size: 16px;
+		min-width: 70px;
+		margin-right: 10px;
+}
 	.formatos {
 		flex-wrap: nowrap;
 		height: auto;
