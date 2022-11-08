@@ -1438,6 +1438,10 @@ h5:hover {
 		align-items: center;
 	}
 	
+	.formatt:hover{
+		    border-radius: 0 8px 8px 0;
+	}
+	
 	.complejo {
 		height: 20px;
 		padding: 18px 12px;
