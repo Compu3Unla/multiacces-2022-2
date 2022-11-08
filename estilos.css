@@ -453,91 +453,7 @@ header div img {
 	padding-top: 20px;
 }
 
-/*---------------------------PELICULAS-------------------------*/
 
-.pelicula {
-	display: flex;
-	margin: 80px 0 56px 94px;
-}
-.back {
-	position: absolute;
-	top: 140px;
-	left: 0;
-	background-color: #0E0926;
-	width: 70px;
-	height: 70px;
-	border-radius: 0 10px 10px 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.pelicula img {
-	border-radius: 20px;
-}
-
-.datatecnica {
-	margin: 20px 87px 0 108px;
-	width: 100%;
-	box-sizing: border-box;
-}
-
-.peli {
-	display: flex;
-	align-items: center;
-}
-
-.peli img {
-	margin-left: 18px;
-	padding-bottom: 2px;
-}
-
-.infopeli{
-	display: flex;
-	width: 60%;
-	max-width: 600px;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	margin-top: 25px;
-}
-
-.infopeli h3 {
-	font-weight: 400;
-	text-transform: capitalize;
-}
-
-.datatecnica p {
-	width: 670px;
-	margin: 25px 0 36px;
-}
-
-.opciones {
-	width: 90%;
-	max-width: 800px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.opciones .botones {
-	width: 280px;
-	margin: 0px;
-}
-
-.secundario {
-	background-color: #7300BD;
-	width: 125px;
-	margin-left: 10px;
-	padding: 12px 6px;
-	border-radius: 30px;
-	border: none;
-	color: #EAEAEA;
-	font-size: 18px;
-	font-family: "Montserrat";
-	font-weight: 700;
-	transition: .5s all ease;
-	overflow: hidden;
-}
 
 /*--------------------CARRUSEL INICIO------------------*/
 
@@ -634,7 +550,114 @@ header div img {
 	margin-left: 96px;
 }
 
-/*-----------------------------COMPRA-----------------------------*/
+/*---------------------------HTML PELICULA -------------------------*/
+
+.pelicula {
+	display: flex;
+	margin: 80px 0 56px 94px;
+}
+.back {
+	position: absolute;
+	top: 140px;
+	left: 0;
+	background-color: #0E0926;
+	width: 70px;
+	height: 70px;
+	border-radius: 0 10px 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pelicula img {
+	border-radius: 20px;
+}
+
+.datatecnica {
+	margin: 20px 87px 0 108px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.peli {
+	display: flex;
+	align-items: center;
+}
+
+.peli img {
+	margin-left: 18px;
+	padding-bottom: 2px;
+}
+
+.infopeli{
+	display: flex;
+	width: 60%;
+	max-width: 600px;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 25px;
+}
+
+.infopeli h3 {
+	font-weight: 400;
+	text-transform: capitalize;
+}
+
+.datatecnica p {
+	width: 670px;
+	margin: 25px 0 36px;
+}
+
+.opciones {
+	width: 90%;
+	max-width: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.opciones .botones {
+	width: 280px;
+	margin: 0px;
+}
+
+.secundario {
+	background-color: #7300BD;
+	width: 125px;
+	margin-left: 10px;
+	padding: 12px 6px;
+	border-radius: 30px;
+	border: none;
+	color: #EAEAEA;
+	font-size: 18px;
+	font-family: "Montserrat";
+	font-weight: 700;
+	transition: .5s all ease;
+	overflow: hidden;
+}
+
+/*---------ver mas--------*/
+#vermas {
+	display: none;
+}
+
+label {
+	display: none;
+}
+
+.sinopsis {
+	margin-bottom: 40px;
+}
+
+.sinopsis p {
+	margin-bottom: 0;
+}
+
+.oculto p {
+	margin-top: 0;
+}
+
+/*-----------------------------HTML COMPRA-----------------------------*/
 
 input, select {
 	color:#000000;
@@ -1181,7 +1204,6 @@ h5 {
 	.icono-usuario {
 		display: none;
 	}
-/*---------------------fijense si no se borró nada importante-----------------------------------------------------*/
 
 /*--------------------CARRUSEL INICIO------------------*/
 	
@@ -1315,8 +1337,6 @@ h5 {
 	
 	.datatecnica p {
 		width: 94%;
-		height: 126px;
-		overflow-x: scroll;
 	}
 	
 	.opciones {
@@ -1338,7 +1358,47 @@ h5 {
 		margin: 15px 20px 15px 0;
 		width: 92%;
 	}
-
+	
+	/*---------ver mas--------*/
+	.oculto {
+		display: none;
+		transition: 0.5s linear;
+	}
+	
+	label {
+		display: inline-block;
+		color: #F88312;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	
+	#vermas:checked ~ .oculto {
+		display: block;
+	}
+	
+	#vermas:checked ~ label {
+		visibility: hidden;
+	}
+	
+	#vermas:checked ~ label:after {
+		content: "ver menos";
+		display: block;
+		visibility: visible;
+	}
+	
+	.sinopsis {
+		margin-bottom: 40px;
+	}
+	
+	.sinopsis p {
+		margin-bottom: 0;
+	}
+	
+	
+	.oculto p {
+		margin-top: 0;
+	}
+	
 /*--------------------FOOTER------------------------*/
 	
 	.footer {
