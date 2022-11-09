@@ -1104,6 +1104,25 @@ h5 {
 .volver img {
 	margin: 17px;
 }
+
+/*------------------------POCHOCLIN-----------------------*/
+.pochoclin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pochoclin img {
+	margin: 80px 60px 80px 0;
+}
+.pochoclin h2 {
+	margin: 0 20px 30px 0px;
+	font-size: 40px;
+}
+.pochoclin h4 {
+	width: 500px;
+	font-size: 30px;
+	font-weight: 400;
+}
 /*-------------------------------------------RESPONSIVE----------------------------------*/
 
 @media screen and (max-width:360px){
@@ -1727,5 +1746,34 @@ h5 {
 		position: absolute;
 		left:0;
 		top: 30%
+	}
+	
+	/*------------------------POCHOCLIN resp-----------------------*/
+	.pochoclin {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+	}
+	.pochoclin img {
+		width: 150px;
+		height: auto;
+		margin: 60px 0 30px;
+	}
+	.pochoclin h2 {
+		margin: 0 0 10px 0;
+		font-size: 23px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.pochoclin h4 {
+		width: 300px;
+		font-size: 16px;
+		font-weight: 400;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
 	}
 }
