@@ -13,10 +13,18 @@ html {
 
 body {
 	background-image: url("img/background.jpg");
+	background-repeat: repeat;
+	background-size: 1366px;
+	background-position: top 0 center;
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
 }
 
 main {
-	margin: 0;
+	margin: 0 auto;
+	/*min-width: 1300px;
+	max-width: 1460px;*/
 }
 
 h1 {
@@ -187,6 +195,14 @@ header {
 	width: 100%;
 	height: 60px;
 	background-color: #130D31;
+	min-width: 1366px;
+}
+
+.navegacion {
+	height: 100%;
+	width: 1366px;
+	margin: 0 auto;
+	background-color: rgba(234,234,234,0.0);/**/
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
@@ -204,14 +220,17 @@ header {
 	display: none;
 }
 
-header label {
+.navegacion label {
 	display: none;
 	padding: 10px;
 }
 
-header div img {
-	margin-left: 84px;
-}
+.navegacion div img {
+	margin: 0 100px;
+}/*	margin-left: 84px;
+.icono-usuario {
+	margin-right: 76px;
+}*/
 
 .menu ul {
 	list-style: none;
@@ -234,10 +253,6 @@ header div img {
 	border: 1px transparent;
 	font-size: 14px;
 	text-transform: uppercase;
-}
-
-.icono-usuario {
-	margin-right: 76px;
 }
 
 /*-------------------------------FORM-------------------------------*/
@@ -360,7 +375,7 @@ header div img {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	margin: 70px 0px 30px 96px;
+	margin: 70px 0px 30px 0px;
 }
 
 .lupa {
@@ -386,16 +401,23 @@ header div img {
 }
 
 /*-------------------------------FOOTER-------------------------------*/
+footer {
+	width: 100%;
+	background-color: #0E0926;
+	min-width: 1366px;
+}
 
-.footer {
+.footer-container {
+	background-color: rgba(234,234,234,0.0) /**/;
+	width: 1366px;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	background-color: #0E0926;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 
-.footer p {
+.footer-container p {
 	font-size: 13px;
 	line-height : 25px;
 }
@@ -457,7 +479,7 @@ header div img {
 
 .slide {
 	width: 1200px;
-	margin: 10px 0 30px 96px;
+	margin: 10px 0 30px 0px;
 	overflow: hidden;
 }
 
@@ -500,7 +522,7 @@ header div img {
 	width: 1200px;
 	height: 330px;
 	display: flex;
-	margin-left: 96px;
+	
 	margin-top: 20px;
 }
 
@@ -525,10 +547,8 @@ header div img {
 }
 	
 .catalogo {
-	/*border: 1px solid white;*/
 	height: 630px;
 	width: 1200px;
-	margin-left: 96px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -544,19 +564,17 @@ header div img {
 	margin: 10px 20px 10px 0px;
 }
 
-.titular {
-	margin-left: 96px;
-}
-
 /*---------------------------HTML PELICULA -------------------------*/
 
 .pelicula {
 	display: flex;
-	margin: 80px 0 56px 94px;
+	margin: 80px auto 56px auto;
+	max-width: 1366px;
+	position: relative;
 }
 .back {
 	position: absolute;
-	top: 140px;
+	top: 0;
 	left: 0;
 	background-color: #0E0926;
 	width: 70px;
@@ -566,12 +584,13 @@ header div img {
 	align-items: center;
 	justify-content: center;
 }
-.pelicula img {
+.pelimg {
 	border-radius: 20px;
+	margin-left: 100px;
 }
 
 .datatecnica {
-	margin: 20px 87px 0 108px;
+	margin: 20px 87px 0 100px;
 	width: 100%;
 	box-sizing: border-box;
 }
@@ -607,7 +626,7 @@ header div img {
 }
 
 .opciones {
-	width: 90%;
+	width: 100%;
 	max-width: 800px;
 	display: flex;
 	flex-wrap: wrap;
@@ -1106,18 +1125,18 @@ h5 {
 }
 /*-------------------------------------------RESPONSIVE----------------------------------*/
 
-@media screen and (max-width:360px){
+@media screen and (max-width : 360px ){
 	/*falta agregar el background*/
 
 	main {
-		margin: 0;
-		padding: 0;
+		min-width: 300px;
+		max-width: 360px;
 	}
 	
 	body {
 		background-image: url("img/background-celu.jpg");
-		width: 100%;
-		height: 100%;
+		background-size: 100%;
+		
 	}
 	
 	h1 {
@@ -1184,14 +1203,27 @@ h5 {
 	
 /*-------------------------------HEADER-------------------------------*/	
 	header {
-		width: 100%;
+		width: 360px;
 		background-color: #130D31;
-		display: block;
+		max-width: 360px;
+		min-width: 320px;
 	}
-	
-	header label {
+	.navegacion {
+		max-width: 360px;
+		width: 100%;
+		justify-content: flex-end;
+		
+	}
+	/*header img {
 		display: flex;
 		justify-content: flex-end;
+	}*/
+	.navegacion label {
+		display: flex;
+		margin-right: 15px;
+	}
+	.navegacion label img {
+		display: block;
 	}
 	
 	header div img {
@@ -1200,8 +1232,8 @@ h5 {
 	.imamedia {
 		display: block;
 		position: absolute;
-		top: 12px;
-		left: 10px;
+		top: 15px;
+		left: 15px;
 	}
 	
 	.menu {
@@ -1211,6 +1243,7 @@ h5 {
 		display: flex;
 		justify-content: center;
 		top: -200px;
+		left:0;
 		transition: all 0.5s;
 		z-index: 20;
 	}
@@ -1321,13 +1354,15 @@ h5 {
 /*---------------------------PELICULA-AVATAR-------------------------*/
 	
 	.pelicula {
-		margin: 15px 4%;
+		margin: 15px 0;
+		padding: 0 4%;
 		width: 96%;
 		box-sizing: border-box;
 	}
 	.back {
 		z-index: 18;
 		top: 75px;
+		left: 0;
 		width: 48px;
 		height: 48px;
 	}
@@ -1337,6 +1372,7 @@ h5 {
 		height: 170px;
 		width: auto;
 		position: absolute;
+		margin-left: 0;
 	}
 
 	.datatecnica {
@@ -1419,7 +1455,17 @@ h5 {
 	}
 	
 /*--------------------FOOTER------------------------*/
-	
+
+	footer {
+		width: 360px;
+		min-width: 320px;
+		max-width: 360px;
+		}
+	.footer-container {
+		max-width: 360px;
+		width: 100%;
+		flex-wrap: wrap;
+	}
 	.contenedor {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -1517,6 +1563,7 @@ h5 {
 		padding-top: 0px;
 		overflow-y: scroll;
 		justify-content: space-between;
+		height: 30px;
 	}
 	
 	.dispodia h3 {
@@ -1579,7 +1626,6 @@ h5 {
 	.complex img {display: none;}
 	.complex {margin: 0;}
 	.complex p {
-		/*en el caso de querer eliminar la direccion, de utiliza un display: none; y se elimina el margin-top*/
 		margin-left: 5%; }
 	
 	.complex div {margin: 10px 5px 0px 5px;}
@@ -1600,31 +1646,19 @@ h5 {
 		padding: 18px 12px;
 	}
 	
-/*.carrecard {}*/
-	
 	.entrada {height: 300px;}
 	.entrada h3 {font-size: 16px;}
-/*.entrada img {}*/
 	.infobuy{
 		font-size: 13px;
 		height: 70px;
 	}
 	.add {height: 30px;	}
-/*.ttl {}
-.clc {}*/
 	
-	.intocine {overflow-y: auto;}
-/*h5 {}
-.intocine img {}
-.secbut {}
-.abc {}
-.butacas {}
-.izq {}
-.cen {}
-.censup {}
-.ceninf {}
-.der {}
-.num h4 {}*/
+	.intocine {
+		overflow-y: auto;
+		height: 560px;
+	}
+
 	.secbut {width: 190%;}
 	.num {margin-bottom: 10px}
 	.abc {
