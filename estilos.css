@@ -916,7 +916,7 @@ h5 {
 	width: 730px;
 }
 
-h5:hover {
+.butacas h5:hover {
 	background-color: #f88312;;
 } 
 
@@ -1397,7 +1397,7 @@ h5:hover {
 		transition: 0.5s linear;
 	}
 	
-	label {
+	.sinopsis label {
 		display: inline-block;
 		color: #F88312;
 		text-decoration: underline;
@@ -1420,7 +1420,7 @@ h5:hover {
 	
 /*--------------------FOOTER------------------------*/
 	
-	.footer {
+	.contenedor {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: flex-start;
