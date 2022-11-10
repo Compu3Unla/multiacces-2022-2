@@ -1135,12 +1135,13 @@ h5 {
 	margin: 80px 60px 80px 0;
 }
 .pochoclin h2 {
-	margin: 0 20px 30px 0px;
-	font-size: 40px;
+	width: 450px;
+	margin: 0 20px 8px 0px;
+	font-size: 26px;
 }
 .pochoclin h4 {
-	width: 500px;
-	font-size: 30px;
+	width: 450px;
+	font-size: 26px;
 	font-weight: 400;
 }
 /*-------------------------------------------RESPONSIVE----------------------------------*/
@@ -1177,7 +1178,11 @@ h5 {
 		/*botones*/
 	}
 /*---------------------SPLASH--------------*/
-
+	
+	#splash{
+	background-image:url("img/background-splash-responsive.jpg");
+	background-attachment: fixed;
+}
 	.boton-splash {
 		top: 48%;
 	}
@@ -1196,6 +1201,7 @@ h5 {
 	
 	.form {
 		width: 100%;
+		height: auto;
 		padding: 0;
 		margin-top: 100px;
 	}
@@ -1797,14 +1803,17 @@ h5 {
 	}
 	.pochoclin h2 {
 		margin: 0 0 10px 0;
-		font-size: 23px;
+		width: 300px;
+		font-size: 18px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		text-align: center;
 	}
 	.pochoclin h4 {
 		width: 300px;
-		font-size: 16px;
+		margin-bottom: 40px;
+		font-size: 18px;
 		font-weight: 400;
 		display: flex;
 		flex-direction: column;
