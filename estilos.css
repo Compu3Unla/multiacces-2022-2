@@ -579,7 +579,7 @@ footer {
 	background-color: #0E0926;
 	width: 70px;
 	height: 70px;
-	border-radius: 0 10px 10px 0;
+	border-radius: 0 15px 15px 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1115,7 +1115,7 @@ h5 {
 .volver {
 	height: 70px;
 	width: 67px;
-	border-radius: 0 20px 20px 0;
+	border-radius: 0 15px 15px 0;
 	background-color: #0E0926;
 	margin-right: 15px;
 }
