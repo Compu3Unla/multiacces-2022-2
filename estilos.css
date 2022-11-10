@@ -1409,7 +1409,7 @@ h5 {
 	
 /*---------------------------PELICULA-AVATAR-------------------------*/
 	
-	.pelicula {
+	#pelicula {
 		margin: 15px 0;
 		padding: 0 4%;
 		width: 96%;
