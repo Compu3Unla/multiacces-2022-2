@@ -1854,22 +1854,23 @@ h5 {
 
 /*------------------------COMPROBANTE DE COMPRA resp-----------------------*/
 
-
-.confirmacion-compra h2 {
-	margin: 0 50px;
-	font-size: 30px;
-}
-
-.confirmacion-compra h3 {
-	margin: 10px 100px;
-}
-.confirmacion-compra p {
-	font-size: 14px;
-	margin: 10px 35px 20px;
-}
-.bot-ticket {
-    width: auto;
-	font-size: 16px;
-}
-
-}
+	.confirmacion-compra h2 {
+		margin: 0 50px;
+		font-size: 30px;
+	}
+	
+	.confirmacion-compra h3 {
+		margin: 10px 100px;
+	}
+	
+	.confirmacion-compra p {
+		font-size: 14px;
+		margin: 10px 35px 20px;
+	}
+	
+	.bot-ticket {
+		width: auto;
+		font-size: 16px;
+	}
+	
+	}
