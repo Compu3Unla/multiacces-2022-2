@@ -10,36 +10,36 @@
 </head>
 <body>
 	<header>
-		<input type="checkbox" id="menu-hamburguesa">
-		<label for="menu-hamburguesa"><img src="img/icono-hamburguesa.svg" width="30px" height="30px" alt="icono-hamburguesa"></label>
-		<a href="index.html"><img class="imamedia" src="img/isotipo.svg" width="40px" height="30px" alt="Multiaccess imagotipo"/></a>
-		<div>
-			<a href="index.html"><img src="img/multiaccess-logo.svg" width="140px" height="16px" alt="Logo Multiaccess"/></a>
+		<div class="navegacion">
+			<input type="checkbox" id="menu-hamburguesa">
+			<label for="menu-hamburguesa"><img src="img/icono-hamburguesa.svg" width="30px" height="30px" alt="icono-hamburguesa"/></label>
+			<a href="index.html"><img class="imamedia" src="img/isotipo.svg" width="40px" height="30px" alt="Multiaccess imagotipo"/></a>
+			<div>
+				<a href="index.html"><img src="img/multiaccess-logo.svg" width="140px" height="16px" alt="Logo Multiaccess"/></a>
+			</div>
+			<nav class="menu">
+				<ul>
+					<li>
+						<a href="home.html">Cartelera</a>
+					</li>
+					<li>
+						<a href="en-proceso.html">Complejos</a>
+					</li>
+					<li>
+						<a href="en-proceso.html">Comunidad</a>
+					</li>
+					<li>
+						<a href="en-proceso.html">Multifan</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="icono-usuario">
+				<img src="img/icono-persona.svg" width="37px" height="37px" alt="Icono de usuario"/>
+			</div>
 		</div>
-		<nav class="menu">
-			<ul>
-				<li>
-					<a href="home.html">Cartelera</a>
-				</li>
-				<li>
-					<a href="en-proceso.html">Complejos</a>
-				</li>
-				<li>
-					<a href="en-proceso.html">Comunidad</a>
-				</li>
-				<li>
-					<a href="en-proceso.html">Multifan</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="icono-usuario">
-			<img src="img/icono-persona.svg" width="37px" height="37px" alt="Icono de usuario"/>
-		</div>
-	
-	</header>	
+	</header>
+
 	<main>
-		
-		
 		<section class="procesocompra">	<!--FECHA Y FORMATO-->
 			<h2>fecha y formato</h2>
 			<section class="fondoc">
@@ -454,7 +454,7 @@
 		
 		<section class="procesocompra" method="post" action="" target="" enctype="text/plain">	<!--COMPRA-->
 			<h2>Datos para la compra</h2>
-			<form class="formulario"> <!--En css aparece tanto la etiqueta form como la clase, debería corregirse ya que el uso de ambas es innecesaria (al menos en esta pagina) -->
+			<form class="formulario">
 				<label for="email">Email</label>
 				<input class="entradatos" type="email" name="email" id="email" placeholder="ejemplo@gmail.com" required>
 				<div class="datoss">
@@ -527,9 +527,10 @@
 			</section>
 		</aside>
 	</main>
+
 	<footer>
-		<section class="footer">
-			<article class="logo_redes">
+		<div class="footer-container">
+			<div class="logo_redes">
 				<div>
 					<img src="img/multiaccess-imagotipo.svg" alt="Multiaccess imagotipo"/>
 				</div>
@@ -542,31 +543,32 @@
 					<p>- Quienes somos</p>
 					<p>- RRHH</p>
 				</div>
-			</article>
-			<article>
+			</div>
+			<div>
 				<div class="contactenos-footer">
 					<h3>Contáctenos</h3>
 					<h4>Revisá las preguntas frecuentes o escribinos y te responderemos a la brevedad.</h4>
 					<p>- Preguntas frecuentes</p>
 					<p>- Contacto</p>
 					<a><input class="botones" type="submit" value="BOTÓN DE ARREPENTIMIENTO"></a>
+
 				</div>
-			</article>
-			<article class="botones-footer">
+			</div>
+			<div class="botones-footer">
 				<div class="bot-foo">
 					<a><input class="botones" type="submit" value="SUMATE A MULTIFAN"></a>
 					<a><input class="botones" type="submit" value="MIS COMPRAS"></a>
 					<a><input class="botones" type="submit" value="CINES/PRECIOS"></a>
 				</div>
-			</article>
-			<article>
+			</div>
+			<div>
 				<div class="datafiscal">
 					<img src="img/data-fiscal1.jpg" width="80" height="109" alt="data fiscal1"/>
 					<img src="img/data-fiscal2.jpg" width="80" height="109" alt="data fiscal 2"/>
 					<p class="contacto">- Libro de quejas online</p>
 				</div>
-			</article>
-		</section>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>
