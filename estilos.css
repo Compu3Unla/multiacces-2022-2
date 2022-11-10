@@ -1082,6 +1082,10 @@ h5 {
 	height: 3970px;
 }
 
+.procesocompra .botones {
+	width: 90%;
+}
+
 .fijo {
 	display: flex;
 	justify-content: space-between;
@@ -1749,7 +1753,6 @@ h5 {
 	
 	/*.formulario,*/ form {
 		width: 100%;
-		margin-bottom: 220px;
 	}
 	
 	/*.formulario p,*/ .formulario label {font-size: 13px;}
