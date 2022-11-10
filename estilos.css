@@ -568,7 +568,7 @@ footer {
 
 /*---------------------------HTML PELICULA -------------------------*/
 
-.pelicula {
+#pelicula {
 	display: flex;
 	margin: 80px auto 56px auto;
 	max-width: 1366px;
