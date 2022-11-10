@@ -527,7 +527,7 @@ footer {
 	margin-top: 20px;
 }
 
-.estrenos figure {
+.estrenos figure, .catalogo figure {
 	width: 180px;
 	height: 280px;
 	overflow: hidden;
@@ -536,13 +536,13 @@ footer {
 	margin-right: 20px;
 }
 
-.estrenos figure img {
+.estrenos figure img, .catalogo figure img {
 	width: 100%;
 	height: 100%;
 	transition: all 500ms ease;
 }
 
-.estrenos figure img:hover{
+.estrenos figure img:hover, .catalogo figure img:hover {
 	transform: scale(1.2);
 	cursor: pointer;
 }
@@ -1235,7 +1235,6 @@ h5 {
 		width: 100%;
 		height: auto;
 		padding: 0;
-		margin-top: 100px;
 	}
 	.form a:hover {
 		color: #F88312;
@@ -1353,7 +1352,6 @@ h5 {
 	
 	.titular {
 		margin-left: 24px;
-		margin-bottom: 10px;
 	}
 	
 	.estrenos{
@@ -1365,10 +1363,11 @@ h5 {
 		flex-wrap: wrap;
 		align-items: center;
 		align-content: space-around;
-		margin-bottom: 10px;
+		margin-top: 0;
+		margin-bottom: 20px;
 	}
 	
-	.estrenos figure{
+	.estrenos figure, .catalogo figure{
 		width: auto;
 		height: 235px;
 		margin: 0px;
@@ -1385,7 +1384,7 @@ h5 {
 		flex-wrap: wrap;
 		align-items: center;
 		align-content: space-around;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 	
 	.catalogo img {
