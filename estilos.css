@@ -533,7 +533,8 @@ footer {
 	overflow: hidden;
 	transition: all 500ms ease;
 	border-radius: 20px;
-	margin-right: 20px;
+	margin: 0 20px 10px 0;
+	
 }
 
 .estrenos figure img, .catalogo figure img {
@@ -562,7 +563,7 @@ footer {
 	height: 280px;
 	width: 180px;
 	border-radius: 20px;
-	margin: 10px 20px 10px 0px;
+	/*margin: 0px 20px 0px 0px;*/
 }
 
 /*---------------------------HTML PELICULA -------------------------*/
@@ -1082,10 +1083,6 @@ h5 {
 	height: 3970px;
 }
 
-.procesocompra .botones {
-	width: 90%;
-}
-
 .fijo {
 	display: flex;
 	justify-content: space-between;
@@ -1237,8 +1234,6 @@ h5 {
 	
 	.form {
 		width: 100%;
-		height: auto;
-		padding: 0;
 	}
 	.form a:hover {
 		color: #F88312;
@@ -1764,21 +1759,15 @@ h5 {
 		padding: 0px 8px;
 	}
 	
-/*.dobledata {}*/
 	.datoss {flex-direction: column;}
 	.datoss div {width: 100%;}
 
 	.fechatarjeta div {flex-direction: column;}
 	.fechatarjeta input {width: 100%;}
-	/*.terminosycondiciones {}
-	.terminosycondiciones p, .terminosycondiciones label {}
-	.terminosycondiciones a {}*/
-	.condiciones {margin: 18px 0 11px 0 ;}
-	form input[type=submit] {
-		width: 90%;
-		margin: 15px 5%;
-	}
-	
+	.condiciones {margin: 18px 0 11px 0;}
+	.procesocompra .botones {
+	width: 90%;
+}
 	.scroll {
 		width: 2%;
 		height: 4080px; /*altura del scroll*/
