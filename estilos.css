@@ -1143,6 +1143,38 @@ h5 {
 	font-size: 30px;
 	font-weight: 400;
 }
+
+/*------------------------COMPROBANTE DE COMPRA-----------------------*/
+
+.confirmacion-compra{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.confirmacion-compra img {
+	margin: 80px 0px 30px 0;
+}
+
+.confirmacion-compra h2 {
+	margin: 0;
+	font-size: 40px;
+	text-align: center;
+}
+
+.confirmacion-compra h3 {
+	margin-top: 15px;
+	text-align: center;
+}
+.confirmacion-compra p {
+	text-align: center;
+	margin: 15px 420px 20px;
+}
+.bot-ticket {
+	margin: 15px 0px 100px;
+}
+
 /*-------------------------------------------RESPONSIVE----------------------------------*/
 
 @media screen and (max-width : 360px ){
@@ -1811,4 +1843,25 @@ h5 {
 		align-items: center;
 		text-align: center;
 	}
+
+/*------------------------COMPROBANTE DE COMPRA resp-----------------------*/
+
+
+.confirmacion-compra h2 {
+	margin: 0 50px;
+	font-size: 30px;
+}
+
+.confirmacion-compra h3 {
+	margin: 10px 100px;
+}
+.confirmacion-compra p {
+	font-size: 14px;
+	margin: 10px 35px 20px;
+}
+.bot-ticket {
+    width: auto;
+	font-size: 16px;
+}
+
 }
