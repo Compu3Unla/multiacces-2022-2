@@ -195,18 +195,17 @@ header {
 	width: 100%;
 	height: 60px;
 	background-color: #130D31;
-	min-width: 1366px;
 }
 
 .navegacion {
 	height: 100%;
-	width: 1366px;
+	max-width: 1366px;
 	margin: 0 auto;
 	background-color: rgba(234,234,234,0.0);/**/
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .menu a:hover {
@@ -225,12 +224,14 @@ header {
 	padding: 10px;
 }
 
-.navegacion div img {
-	margin: 0 100px;
-}/*	margin-left: 84px;
+.icono-logo{
+	margin-left: 30px;
+	margin-right: auto;
+}
 .icono-usuario {
-	margin-right: 76px;
-}*/
+	margin-right: 60px;
+	margin-left: auto;
+}
 
 .menu ul {
 	list-style: none;
@@ -263,8 +264,10 @@ header {
 	flex-wrap: nowrap;
 	align-items: center;
 	width: 450px;
-	padding: 100px;
+	/*padding: 100px;*/
+	height: 100vh;
 	margin: auto;
+	justify-content: center;
 	font-family: "Montserrat";
 	font-weight: 300;
 	color: white;
@@ -404,12 +407,11 @@ header {
 footer {
 	width: 100%;
 	background-color: #0E0926;
-	min-width: 1366px;
 }
 
 .footer-container {
 	background-color: rgba(234,234,234,0.0) /**/;
-	width: 1366px;
+	max-width: 1366px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
@@ -522,7 +524,6 @@ footer {
 	width: 1200px;
 	height: 330px;
 	display: flex;
-	
 	margin-top: 20px;
 }
 
