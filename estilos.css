@@ -1286,7 +1286,7 @@ h5 {
 		top: 50px;
 	}
 	
-	.icono-usuario {
+	.icono-usuario, icono-logo {
 		display: none;
 	}
 
